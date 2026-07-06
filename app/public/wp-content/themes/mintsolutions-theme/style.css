@@ -7,6 +7,54 @@ Version: 1.0
 Text Domain: mintsolutions
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Regular.woff2") format("woff2"),
+       url("assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Medium.woff2") format("woff2"),
+       url("assets/fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+       url("assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Heavy.woff2") format("woff2"),
+       url("assets/fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Light.woff2") format("woff2"),
+       url("assets/fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "BRFirma";
+  src: url("assets/fonts/BRFirma-Regular.woff2") format("woff2"),
+       url("assets/fonts/BRFirma-Regular.woff") format("woff"),
+       url("assets/fonts/BRFirma-Regular.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Gilmer";
+  src: url("assets/fonts/Gilmer.woff2") format("woff2"),
+       url("assets/fonts/Gilmer.woff") format("woff"),
+       url("assets/fonts/Gilmer.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
 :root {
     --primary-color: #2F9C43;
     --primary-color-light: #226db4;
@@ -26,17 +74,16 @@ Text Domain: mintsolutions
     --primary-font: "Outfit", sans-serif;
     --secondary-font: "Inter", sans-serif;
     --brfirma: 'BRFirma', sans-serif;
-    --tertiary-font-reg: 'Gilroy-Regular', sans-serif;
-    --tertiary-font-med: 'Gilroy-Medium', sans-serif;
-    --tertiary-font-bold: 'Gilroy-Bold', sans-serif;
-    --tertiary-font-heavy: 'Gilroy-Heavy', sans-serif;
-    --tertiary-font-light: 'Gilroy-Light', sans-serif;
-    --tertiary-font-second: "Gilmer Regular", sans-serif;
+    --tertiary-font-reg: 'Gilroy', sans-serif;
+    --tertiary-font-med: 'Gilroy', sans-serif;
+    --tertiary-font-bold: 'Gilroy', sans-serif;
+    --tertiary-font-heavy: 'Gilroy', sans-serif;
+    --tertiary-font-light: 'Gilroy', sans-serif;
+    --tertiary-font-second: "Gilmer", sans-serif;
 }
 
 /* Global Base Styles */
 html { scroll-behavior: smooth; }
-
 body {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -45,16 +92,18 @@ body {
     color: var(--gray-dark);
     margin: 0;
 }
-
 a { cursor: pointer; text-decoration: none; }
+h1, h2, h3, h4, h5, h6 { color: var(--gray-dark); line-height: 1.2; margin: 0 0 15px; }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--gray-dark);
-    line-height: 1.2;
-    margin: 0 0 15px;
+/* Container Width Override */
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 100% !important;
+  margin-right: auto;
+  margin-left: auto;
 }
-
-/* Page-specific styles live in their own CSS files:
-   - Header / Footer / Buttons  →  assets/css/header-footer.css
-   - Home page                  →  assets/css/home.css
-*/
+@media (min-width: 768px) { .container { max-width: 96% !important; } }
+@media (min-width: 1024px) { .container { max-width: 94% !important; padding-right: 15px; padding-left: 15px; } }
+@media (min-width: 1440px) { .container { max-width: 92% !important; } }
+@media (min-width: 1680px) { .container { max-width: 1920px !important; width: 90% !important; } }
