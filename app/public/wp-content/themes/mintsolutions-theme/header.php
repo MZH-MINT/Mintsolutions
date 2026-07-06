@@ -37,22 +37,18 @@
 
 				<div class="main-nav-otr">
 					<nav class="main-nav">
-						<ul>
+						<ul class="nav-links">
 							<li>
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="<?php echo is_front_page() ? 'active' : ''; ?>">Home</a>
 							</li>
 							<li>
 								<a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>" class="<?php echo is_page( 'about-us' ) ? 'active' : ''; ?>">About us</a>
 							</li>
-							<li>
+							<li class="has-dropdown">
 								<a href="<?php echo esc_url( home_url( '/our-expertise/' ) ); ?>" class="<?php echo is_page( array( 'our-expertise', 'services', 'solutions' ) ) ? 'active' : ''; ?>">OUR EXPERTISE</a>
-								<ul>
-									<li>
-										<a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a>
-									</li>
-									<li>
-										<a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a>
-									</li>
+								<ul class="dropdown">
+									<li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
 								</ul>
 							</li>
 							<li>

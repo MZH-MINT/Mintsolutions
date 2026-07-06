@@ -6,3 +6,457 @@ Description: Custom WordPress theme for MintSolutions website
 Version: 1.0
 Text Domain: mintsolutions
 */
+
+:root {
+    --primary-color: #2F9C43;
+    --primary-color-light: #226db4;
+    --primary-border-color: #1f3c57;
+    --btn-color-bg: #5d7c2a;
+    --btn-color: #8dc237;
+    --secondary-color: #B20000;
+    --white: #fff;
+    --black: #000;
+    --red: #f00;
+    --green: #2F9C43;
+    --blue: #098496;
+    --gray-light: #ddd;
+    --gray: #767676;
+    --gray-dark: #333;
+    --border: #ccc;
+    --primary-font: "Outfit", sans-serif;
+    --secondary-font: "Inter", sans-serif;
+    --tertiary-font-reg: 'Gilroy-Regular', sans-serif;
+    --tertiary-font-med: 'Gilroy-Medium', sans-serif;
+    --tertiary-font-second: "Gilmer Regular", sans-serif;
+}
+
+/* Global Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gray-dark);
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gray-dark);
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+/* Header Styles - Fixed Top Bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1006;
+    transition: all 0.5s;
+    padding: 10px 0;
+    background: transparent;
+}
+
+header:hover {
+    background: var(--white);
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    transition: opacity 0.3s ease;
+}
+
+header:hover .w-logo {
+    display: none;
+}
+
+header:hover .b-logo {
+    display: block;
+}
+
+.main-nav-otr {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header:hover .nav-links li a {
+    color: var(--black);
+}
+
+.nav-links li a:hover {
+    color: var(--green);
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    color: var(--black) !important;
+    padding: 8px 20px;
+    display: block;
+}
+
+.nav-rt-section ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.sals-f-btn {
+    color: var(--white);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header:hover .sals-f-btn {
+    color: var(--black);
+}
+
+.rto-btn {
+    background: #2F9C43;
+    color: var(--white) !important;
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.rto-btn:hover {
+    background: #257d35;
+}
+
+/* Banner & Hero Section - Extreme Left Alignment */
+.h-banner-otr {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.h-banner {
+    width: 100%;
+    position: relative;
+    height: 340px;
+}
+
+@media (min-width: 768px) { .h-banner { height: 500px; } }
+@media (min-width: 1024px) { .h-banner { height: 700px; } }
+@media (min-width: 1440px) { .h-banner { height: 910px; } }
+
+.h-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.h-banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.hero-section {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.hero {
+    margin-left: 120px; /* Increased for more left alignment */
+    max-width: 700px;
+}
+
+@media (max-width: 1024px) {
+    .hero { margin-left: 60px; }
+}
+
+@media (max-width: 768px) {
+    .hero { margin-left: 20px; margin-right: 20px; }
+}
+
+.hero h2 {
+    color: var(--green);
+    text-transform: uppercase;
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 55px; /* Slightly larger */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.hero h2 span {
+    color: var(--white);
+}
+
+.hero p {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Trusted Brands Section - Extreme Left Alignment */
+.clint-logo-section {
+    background-image: linear-gradient(to right, #3BB54A 0%, #2F9C43 40%, #329F78 59%, #3AA7EA 100%);
+    padding: 60px 0;
+    color: var(--white);
+}
+
+.clint-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clint-logo h3 {
+    color: var(--white);
+    font-size: 32px;
+    text-align: left;
+    margin: 0;
+    width: 25%;
+    font-weight: 600;
+}
+
+.logos {
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    gap: 60px;
+    animation: marquee 25s linear infinite;
+    width: max-content;
+}
+
+.marquee img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Home Page Content */
+.main-contain {
+    background: #F2F2F2;
+}
+
+.h-about-section {
+    padding: 80px 0;
+}
+
+.h-about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left align items */
+}
+
+.h-about-content .item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.h-about-content .item .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--white);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-about-content .item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #4C4D4F;
+}
+
+.h-about-content .item p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    color: #656565;
+}
+
+.h-about-content .item:hover {
+    background: rgba(47, 156, 67, 0.1); /* Green highlight on hover */
+    border-radius: 10px;
+}
+
+.h-about-content .item:hover p {
+    max-height: 150px;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.abt-img {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.abt-img .grdnt-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(47, 156, 67, 0.8), transparent);
+    z-index: 1;
+}
+
+/* Services Section */
+.hm-services {
+    padding: 80px 0;
+}
+
+.hm-services-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.services-card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.services-card {
+    position: relative;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s ease;
+}
+
+.services-card:hover {
+    background-color: var(--green);
+    transform: translateY(-10px);
+}
+
+.services-card h4 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: var(--white);
+    font-size: 26px;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.services-card:hover h4 {
+    bottom: 70%;
+}
+
+.service-conte {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.services-card:hover .service-conte {
+    opacity: 1;
+}
+
+.service-conte p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-conte .rto-btn {
+    background: var(--white);
+    color: var(--green) !important;
+    font-weight: 700;
+}
