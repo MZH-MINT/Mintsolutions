@@ -12,7 +12,11 @@
 				<div class="col-xl-3 col-lg-4 col-md-5">
 					<div class="f-abt">
 						<a title="Mint Solutions FZCO" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="f-logo">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-black-v2.png" alt="Mint Solutions FZCO" />
+							<?php if ( is_page( 'salesforce' ) ) : ?>
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-v2.png" alt="Mint Solutions FZCO" />
+							<?php else : ?>
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-black-v2.png" alt="Mint Solutions FZCO" />
+							<?php endif; ?>
 						</a>
 						<p>
 							At Mint Solutions FZCO, we understand that change is not always
