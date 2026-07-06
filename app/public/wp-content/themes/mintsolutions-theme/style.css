@@ -6,3 +6,55 @@ Description: Custom WordPress theme for MintSolutions website
 Version: 1.0
 Text Domain: mintsolutions
 */
+
+:root {
+    --primary-color: #2F9C43;
+    --primary-color-light: #226db4;
+    --primary-border-color: #1f3c57;
+    --btn-color-bg: #5d7c2a;
+    --btn-color: #8dc237;
+    --secondary-color: #B20000;
+    --white: #fff;
+    --black: #000;
+    --red: #f00;
+    --green: #2F9C43;
+    --blue: #098496;
+    --gray-light: #ddd;
+    --gray: #767676;
+    --gray-dark: #333;
+    --border: #ccc;
+    --primary-font: "Outfit", sans-serif;
+    --secondary-font: "Inter", sans-serif;
+    --brfirma: 'BRFirma', sans-serif;
+    --tertiary-font-reg: 'Gilroy-Regular', sans-serif;
+    --tertiary-font-med: 'Gilroy-Medium', sans-serif;
+    --tertiary-font-bold: 'Gilroy-Bold', sans-serif;
+    --tertiary-font-heavy: 'Gilroy-Heavy', sans-serif;
+    --tertiary-font-light: 'Gilroy-Light', sans-serif;
+    --tertiary-font-second: "Gilmer Regular", sans-serif;
+}
+
+/* Global Base Styles */
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--gray-dark);
+    margin: 0;
+}
+
+a { cursor: pointer; text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gray-dark);
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+/* Page-specific styles live in their own CSS files:
+   - Header / Footer / Buttons  →  assets/css/header-footer.css
+   - Home page                  →  assets/css/home.css
+*/
