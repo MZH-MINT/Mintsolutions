@@ -1,0 +1,266 @@
+/* ===========================
+			Header Section
+=========================== */
+
+html{
+	  scroll-behavior: smooth;
+}
+body{
+	font-family: $primary-font;
+	font-weight:$fw-500;
+	font-size: 20px;
+	line-height: 40px;
+	
+}
+a{
+	  cursor: pointer;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1006;
+	transition: all 0.5s;
+	@include min(320){
+			padding: 10px 0;
+	}
+	@include min(768){
+	padding: 20px 0;
+	}
+	@include min(1024){
+	padding:30px 0;
+	}
+	@include min(1400){
+	padding:30px 0;
+	}
+	@include min(1680){
+	padding:35px 0;
+	}
+	.b-logo{
+		display: none;
+	}
+	&:hover{
+		background:$white;
+		.w-logo{
+			display: none;
+		}
+		.b-logo{
+			display: block;
+		}
+		.main-nav a,.sals-f-btn{
+			color: $black;
+		}
+		.rto-btn{
+		color: $white!important;
+	}
+		
+	}
+	.header-section{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		.logo{
+			text-decoration: none;
+			width: 120px;
+			height: auto;
+					@include min(767){
+				width: 180px;
+			}
+					@include min(1024){
+				width: 180px;
+			}
+				@include min(1440){
+				width: 200px;
+			}
+			
+				@include min(1680){
+					width:264px;
+			 
+			}
+		}
+	}
+}
+.header-wt{
+	background: $white;
+	.b-logo {
+    display: block;
+}
+	.w-logo {
+    display: none;
+}
+.main-nav a, .sals-f-btn{
+	color: #44505C;
+	cursor: pointer;
+	&.rto-btn{
+		color: $white;
+	}
+}
+
+}
+.main-nav-otr{
+margin-left: auto;
+display: flex;
+align-items: center;
+}
+
+.nav-rt-section{
+		@include min(1024){
+		margin-left: 25px;
+		}
+		@include min(1440){
+		margin-left: 45px;
+		}
+		@media (min-width: 1680px){
+		margin-left: 78px;
+		}
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+			display: inline-block;
+			a{
+				text-decoration: none;
+				color:$white;
+				text-transform: uppercase;
+				   @include min(1200){
+					font-size: 13px;
+				   }
+				     @include min(1400){
+					font-size: 14px;
+				   }
+				    @include min(1600){
+					font-size: 16px;
+				   }
+				
+				&.sals-f-btn{
+					position: relative;
+					padding-right: 20px;
+					margin-right: 15px;
+					
+					&:hover{
+						color: $green;
+					}
+					 @include min(1200){
+						padding-right: 20px;
+					 }
+					 @include min(1680){
+						padding-right: 18px;
+					 }
+					&:after{
+					content: "";
+					position: absolute;
+					top: -18px;
+					right: -19px;
+				
+					background: url(/assets/images/icons/sf-icon.png) no-repeat ;
+					 @include min(1200){
+					width:35px;
+					height: 35px;
+					 }
+					 @include min(1400){
+					width:45px;
+					height: 45px;
+					 }
+					  @include min(1680){
+						width: 56px;
+					height: 56px;
+					 }
+					}
+
+				}
+					
+			}
+		
+		}
+	}
+}
+// .slim-header {
+// 	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
+// }
+.rto-btn{
+	background: #2F9C43;
+				color: $white;
+				border-radius: 4px;
+				position: relative;
+				padding: 3px 25px 3px 10px;
+				font-size: 13px;
+				letter-spacing: 0.6px;
+				height: fit-content;
+				width: fit-content;
+				line-height: 33px;
+				&:hover{
+					color: $white!important;
+				}
+				 @include min(1200){
+					padding: 4px 30px 4px 14px;
+					font-size: 13px;
+					line-height: 36px;
+				 }
+				 @include min(1400){
+					padding: 4px 35px 4px 14px;
+					font-size: 14px;
+				 }
+				@include min(1680){
+						padding: 5px 46px 5px 22px;
+				 font-size: 16px;
+				 }
+				span{
+					position: relative;
+					&::after{
+					content: "";
+					position: absolute;
+					z-index: 2;
+					top: 50%;
+					right: -15px;
+					width: 16px;
+					height: 16px;
+					transform: translateY(-50%);
+					background: url(/assets/images/icons/btn-rt-icon.png) ;
+					@include min(768){
+					right: -15px;
+					}
+					@include min(1200){
+					right: -20px;
+					}
+					@include min(1440){
+					right: -20px;
+					}
+					@include min(1680){
+					right: -24px;
+					}
+			
+				}
+				 }
+				
+			}
+
+
+
+			.rto-wht-btn{
+				background: $white;
+				 width: fit-content;
+				 color: $green;
+				 text-transform: uppercase;
+				 letter-spacing: 0.1px;
+				 span{
+					position: relative;
+				
+				 &:after{
+					background: url(/assets/images/icons/btn-rt-gr-icon.png) no-repeat ;
+					top: 58%;
+					right: -27px;
+					@include min(375){
+					right: -28px;
+					}
+				 }
+				  }
+				 &:hover{
+					color: $green!important;
+				 }
+			}
+
+

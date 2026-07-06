@@ -1,0 +1,455 @@
+.section-services{
+    margin: 40px 0;
+ @include min(768){
+     margin-top: 20px;
+ }
+}
+.services-wrap{
+     transition: all ease-in-out 0.6s;
+    &:hover{
+         transition: all ease-in-out 0.6s;
+        .lm-btn{
+            background: $green;
+            color: $white!important;
+             &:after{
+                background: url(/assets/images/icons/btn-rt-iconw.png) no-repeat;
+             }
+        }
+           .picture{
+            overflow: hidden;
+             transition: all ease-in-out 0.6s;
+        }
+        &:before{
+        transition: all ease-in-out 0.6s;
+            background-image: linear-gradient(to bottom, #00ABFF,#0080FF,#2F9C43) ;	
+        }
+            i{
+            transition: all ease-in-out 0.6s;
+            background-image: linear-gradient(to right, #3BB54A,#2F9C43,#329F78,#3AA7EA) ;	
+            outline: 6px solid #fff;
+          
+        }
+     
+        .services-img img{
+            transform: scale(1.1);
+         transition: all ease-in-out 0.6s;
+        }
+    }
+        i{
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4.58px 20.62px 0 rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 50%;
+        top: 23%;
+        transform: translateX(-50%);
+               outline: 6px solid transparent;
+           transition: all ease-in-out 0.6s;
+            width: 45px;
+        height:45px;
+        padding: 10px;
+           @include min(1440){
+              width: 74px;
+        height: 74px;
+         padding: 0px;
+           }
+           &:before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 22px;
+            height: 22px;
+             @include min(1024){
+             width: 26px;
+            height: 26px;
+             }
+              @include min(1200){
+             width: 34px;
+            height: 34px;
+             }
+           }
+    }
+     .lm-btn{
+            border: 1px solid #2F9C43;
+            border-radius: 4.58px;
+            padding:2px 25px 2px 15px;
+            font-family: $tertiary-font-reg;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #2F9C43;
+            font-size: 16px;
+            width: fit-content;
+            margin-top: 15px;
+            align-items: center;
+            letter-spacing: .8px;
+            position: relative;
+             @include min(1440){
+                font-size: 20px;
+                 padding:8px 45px 8px 25px;
+              }
+            &:after{
+                content: "";
+                width: 8px;
+                height: 13px;
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(/assets/images/icons/btn-rt-gr-icon.png) no-repeat;
+            }
+        }
+        .picture{
+   
+       overflow: hidden;
+       border-radius:22px;
+       transition: all ease-in-out 0.2s;
+       margin-left: auto;
+        width: auto;
+       height: auto;
+        @include min(1024){
+        width: 100%;
+       height: auto;
+       }
+     
+       @include min(1680){
+        width: 571px;
+       height: 420px;
+       }
+       img{
+        border-radius: 22px;
+        transition: all ease-in-out 0.2s;
+       }
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background: #A2A2A2;
+          display: none;
+         @include min(768){
+            display: block;
+         }
+    }
+}
+
+.services-wrap:nth-child(odd){
+      gap: 150px;
+        position: relative;
+      @include min(768){
+         display: flex;
+        }
+        @include min(1680){
+              gap: 200px;
+        }
+  
+
+    i{
+          &:before{
+                 background: url(/assets/images/icons/tool01.png) no-repeat;
+                 transition: all ease-in-out 0.3s;
+                    width: 22px;
+            height: 22px;
+            background-size: cover;
+             @include min(1024){
+                   background: url(/assets/images/icons/tool01.png)  no-repeat;
+             width: 26px;
+            height: 26px;
+            background-size: cover;
+             }
+              @include min(1200){
+                               background: url(/assets/images/icons/tool01.png)  no-repeat;
+             width: 34px;
+            height: 34px;
+            background-size: cover;
+             }
+            }
+    }
+         &:hover{
+            i{
+          &:before{
+                 background: url(/assets/images/icons/tool01w.png) no-repeat;
+                 transition: all ease-in-out 0.3s;
+                width: 22px;
+            height: 22px;
+            background-size: cover;
+                
+             @include min(1024){
+        
+            background: url(/assets/images/icons/tool01w.png) no-repeat;
+            width: 26px;
+            height: 26px;
+            background-size: cover;
+             }
+              @include min(1200){
+       
+                    background: url(/assets/images/icons/tool01w.png) no-repeat;
+                     width: 34px;
+            height: 34px;
+            background-size: cover;
+             }
+            }
+    }
+    }
+    .services-img{
+          width: 100%;
+        order: 1;
+        padding-top: 50px;
+         transition: all ease-in-out 0.6s;
+        @include min(768){
+            width: 50%;
+        padding-top: 80px;
+
+        }
+    }
+    
+    .services-detail{
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+         order: 2;
+          margin-top:30px;
+           @include min(768){
+            width: 50%;
+            margin-top: 90px;
+        }
+          @include min(1440){
+     margin-top: 122px;
+          }
+           @include min(1680){
+     margin-top: 132px;
+          }
+          P{
+            font-family: $primary-font;
+            font-weight: 300;
+              font-size: 18px;
+            line-height: 26px;
+            @include min(1440){
+                line-height: 32px;
+            font-size: 22.91px;
+            }
+        }
+
+        
+       
+    }
+}
+
+
+.services-wrap:nth-child(even){
+       gap: 150px;
+    position: relative;
+      @include min(768){
+         display: flex;
+        }
+        @include min(1680){
+              gap: 200px;
+        }
+  
+            i{
+          &:before{
+                 background: url(/assets/images/icons/tool02.png) no-repeat;
+                 transition: all ease-in-out 0.3s;
+                   width:22px;
+            height: 22px;
+            background-size: cover;
+                       @include min(1024){
+                   width:26px;
+            height: 26px;
+            background-size: cover;
+                 }
+                 @include min(1200){
+                   width: 34px;
+            height: 34px;
+            background-size: cover;
+                 }
+            }
+    }
+
+                    &:hover{
+            i{
+          &:before{
+                 background: url(/assets/images/icons/tool02w.png) no-repeat;
+                 transition: all ease-in-out 0.3s;
+                   width:22px;
+            height: 22px;
+            background-size: cover;
+               
+                  @include min(1024){
+                   width:26px;
+            height: 26px;
+            background-size: cover;
+                 }
+                 @include min(1200){
+                   width: 34px;
+            height: 34px;
+            background-size: cover;
+                 }
+            }
+    }
+    }
+
+        .services-img{
+          width: 100%;
+        order: 1;
+        padding-top: 50px;
+         transition: all ease-in-out 0.6s;
+        @include min(768){
+        padding-top: 80px;
+
+            width: 50%;
+              text-align: left;
+        order: 2;
+        }
+    }
+  
+
+    .services-detail{
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+         order: 1;
+                margin-top:30px;
+           @include min(768){
+             align-items: flex-end;
+            width: 50%;
+            text-align: right;
+            margin-top:90px;
+        }
+          @include min(1440){
+     margin-top: 122px;
+          }
+           @include min(1680){
+     margin-top: 132px;
+          }
+             P{
+            font-family: $primary-font;
+            font-weight: 300;
+              font-size: 18px;
+            line-height: 26px;
+            @include min(1440){
+                line-height: 32px;
+            font-size: 22.91px;
+            }
+        }
+
+          
+    }
+}
+
+
+
+
+.discover-section{
+    background: url(/assets/images/discover-img.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400px;
+     @include min(768){
+    height: 500px;
+    }
+     @include min(1440){
+    height: 650px;
+    }
+    @include min(1680){
+    height: 740px;
+    }
+      .discover-contant{
+                padding-left: 20px;
+               }
+    &:hover{
+        transition: all ease-in-out 0.3s;
+        .discover-contant-wrap{
+            transition: all ease-in-out 2s;
+               &:before{
+                width:100%;
+                background: #F2F2F2;
+               transition: all ease-in-out 2s;
+               }
+               .discover-contant{
+                padding-left: 20px;
+               }
+               .discover-contant h2{
+                    color: #161B21;
+                    transition: all ease-in-out 2s;
+               }
+               .discover-contant p{
+                 color: #44505C;
+                  transition: all ease-in-out 2s;
+               }
+        }
+    }
+    .discover-contant-wrap{
+       transition: all ease-in-out 2s;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:76%;
+            @include min(768){
+                width: 48%;
+            }
+        &:before{
+            content: "";
+            width: 0;
+            height: 100%;
+            background: transparent;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            transition: all ease-in-out 2s;
+             padding: 0 20px;
+               @include min(768){
+                padding: 0;
+            }
+        }
+        .discover-contant{
+            position: relative;
+            z-index: 2;
+            h2{
+                font-family: $primary-font;
+                font-weight: 300;
+                color: $white;
+                transition: all ease-in-out 2s;
+                   font-size:32px;
+                line-height:36px;
+                  @include min(768){
+                       font-size:40px;
+                line-height: 50px;
+                }
+                  @include min(1440){
+                       font-size: 52px;
+                line-height: 60px;
+                }
+                @include min(1680){
+                       font-size: 64px;
+                line-height: 66px;
+                }
+            }
+            P{
+                 font-family: $primary-font;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 300;
+                color: $white;
+                    @include min(768){
+                font-size: 18px;
+                 line-height: 30px;
+                 letter-spacing: 0.2px;
+                    }
+            }
+        }
+    }
+}

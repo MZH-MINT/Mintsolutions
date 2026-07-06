@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../../fonts/Gilroy-Regular ☞'), url('../../fonts/Gilroy-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: local('../../fonts/Gilroy-Medium ☞'), url('../../fonts/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Heavy.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/assets/fonts/Gilroy-Light.woff2") format("woff2"),
+    url("../../fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BRFirma */
+@font-face {
+  font-family: "BRFirma";
+  src: url("/assets/fonts/BRFirma-Regular.woff2") format("woff2"),
+    url("/assets/fonts/BRFirma-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica Now Display (if files available) */
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url("/assets/fonts/HelveticaNowDisplay-Regular.woff2") format("woff2"),
+    url("/assets/fonts/HelveticaNowDisplay-Regular.woff") format("woff"),
+    url("/assets/fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Gilmer (local files + external fallback) */
+@font-face {
+  font-family: "Gilmer";
+  src: url("/assets/fonts/Gilmer.woff2") format("woff2"),
+    url("/assets/fonts/Gilmer.woff") format("woff"),
+    url("/assets/fonts/Gilmer.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* External fallback (keep if you rely on this hosted copy) */
+@font-face {
+  font-family: "Gilmer";
+  src: url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.eot");
+  src: url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/65c79a29b6ed725883911cb318380955.svg#Gilmer") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* optional: set a CSS variable and default font stack */
+:root {
+  --font-sans: "Gilroy", "Inter", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+body {
+  font-family: var(--font-sans);
+}

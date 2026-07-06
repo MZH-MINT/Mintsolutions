@@ -1,0 +1,218 @@
+.curP {
+  cursor: pointer;
+}
+.dFlex {
+  @include flexbox();
+}
+.m-l-auto {
+  margin-left: auto;
+}
+.m-t-auto {
+  margin-top: auto;
+}
+.vhCenter {
+  @include flex-align(vhCenter);
+}
+.vCenter {
+  @include flex-align(vCenter);
+}
+.hCenter {
+  @include flex-align(hCenter);
+}
+.vBottom {
+  @include flex-align(vBottom);
+}
+.hRight {
+  @include flex-align(hRight);
+}
+.vCenHRight {
+  @include flex-align(vCenHRight);
+}
+.vhEnd {
+  @include flex-align(vhEnd);
+}
+.vBtmHcntr {
+  @include align-items(end);
+  @include flexbox();
+  @include justify-content(center);
+}
+.jc-center {
+  @include justify-content(center);
+}
+.no-wrap {
+  @include flex-wrap(nowrap);
+}
+.align-center {
+  @include justify-content(center);
+}
+.grecaptcha-badge {
+  display: none !important;
+}
+.center {
+  @include justify-content(center);
+  text-align: center;
+  .btn {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.cmn-space {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  @include min(768) {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  @include min(1200) {
+    padding-bottom: 55px;
+    padding-top: 55px;
+  }
+  @include min(1600) {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+}
+.bottom-space {
+  padding-bottom: 30px;
+  @include min(768) {
+    padding-bottom: 40px;
+  }
+  @include min(1200) {
+    padding-bottom: 55px;
+  }
+  @include min(1600) {
+    padding-bottom: 70px;
+  }
+
+}
+
+#content_wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.bg-primary {
+  background-color: var(--global--color-primary);
+}
+.text-primary {
+  color: var(--global--color-primary) !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: inherit !important;
+    a {
+      color: inherit !important;
+      &:hover {
+        color: var(--global--color-black) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.text-secondary {
+  color: var(--global--color-secondary);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    color: inherit !important;
+    a {
+      color: inherit !important;
+      &:hover {
+        color: var(--global--color-primary) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.text-white {
+  color: var(--global--color-white) !important;
+  p,
+  li,
+  a,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    color: inherit !important;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: underline !important;
+    &:hover {
+      color: var(--global--color-primary) !important;
+      text-decoration: none !important;
+    }
+  }
+  a[href^="tel"] {
+    text-decoration: none !important;
+    &:hover {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+  }
+}
+.text-black {
+  color: var(--global--color-black) !important;
+  p,
+  li,
+  a,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote {
+    color: inherit !important;
+  }
+  a {
+    color: inherit !important;
+    &:hover {
+      color: var(--global--color-secondary) !important;
+      text-decoration: none !important;
+    }
+  }
+}
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+.m-t-0 {
+  margin-top: 0 !important;
+}
+.m-b-5 {
+  margin-bottom: 5px !important;
+}
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+.p-t-0 {
+  padding-top: 0 !important;
+}
+.p-b-10 {
+  padding-bottom: 10px !important;
+}
+.p-t-10 {
+  padding-top: 10px !important;
+}
+.p-b-20 {
+  padding-bottom: 20px !important;
+}
+.p-l-0 {
+  padding-left: 0 !important;
+}

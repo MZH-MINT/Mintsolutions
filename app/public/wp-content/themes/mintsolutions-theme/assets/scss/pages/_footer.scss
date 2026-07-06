@@ -1,0 +1,220 @@
+
+footer{
+    padding: 10px 0 15px 0;
+    margin-top: 20px;
+      @include min(768){
+padding: 10px 0 15px 0;
+      }
+    @include min(1400){
+    padding: 10px 0 15px 0;
+    }
+    p{
+        font-size: 14px;
+        line-height: 22px;
+       
+           @include min(1400){
+            font-size: 16px;
+            line-height: 28px;
+           }
+           @include min(1400){
+        font-size: 18px;
+           }
+    }
+    .f-abt{
+    .f-logo{
+         width: 120px;
+         margin-bottom:15px;
+             @include min(767){
+                width: 180px;
+                 margin-bottom:10px;
+             }
+              @include min(1024){
+               margin-bottom: 20px;
+                width: 180px;
+              }
+              @include min(1440){
+				width: 200px;
+			}
+               @include min(1680){
+               margin-bottom: 20px;
+                width: 264px;
+              }
+        }
+        p{
+            color: #161B21;
+            font-family: $brfirma;
+             margin-bottom: 10px;
+               font-size: 14px;
+                    line-height: 22px;
+                
+             @include min(768){
+            margin-bottom: 30px;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                @include min(1200){
+                font-size: 16px;
+                 line-height: 28px;
+        }
+              @include min(1400){
+                font-size: 18px;
+                 line-height: 30px;
+        }
+    }
+}
+    .f-sm-icons{
+        width: 60%;
+         margin-bottom: 15px;
+         @include min(768){
+            margin-bottom: 0;
+         }
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                a{
+                    i{
+                        color: #161B21;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .f-nav{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+    
+          @include min(768){
+          padding-left: 40px;
+          }
+            @include min(1024){
+          padding-left: 60px;
+      
+          }
+          @include min(1200){
+          grid-template-columns: repeat(3,1fr);
+          }
+            ul{
+            margin: 0 0 15px;
+            padding: 0;
+          
+             @include min(1200){
+            margin: 0 0 30px;
+             }
+            li{
+                list-style: none;
+                display: block;
+                color: #161B21;
+                    font-size: 12px;
+                    line-height: 22px;
+                    letter-spacing: 0.86px;
+                    margin-bottom: 8px;
+                @include min(768){
+                font-size: 14px;
+                    line-height: 28px;
+                }
+                @include min(1200){
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+                @include min(1400){
+                font-size: 17px;
+                line-height: 30px;
+                }
+                &:first-child{
+                    color: #828282;
+                    margin-bottom: 10px;
+                    @include min(1200){
+                    margin-bottom: 20px;
+                    }
+                    a{
+                        cursor: default;
+                        &:hover{
+                            color: #828282;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                &.mail{
+        text-transform: none;
+    }
+                    &:hover{
+                        color: $green;
+                    }
+             
+                }
+            }
+        }
+    }
+
+  .f-adrs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #606060;
+    P{
+font-size: 12px;
+        margin-bottom: 0px;
+         @include min(1200){
+    font-size: 14px;
+    }
+    }
+    ul{
+        margin: 0;
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 40px;
+            font-size: 12px;
+         @include min(1200){
+    font-size: 14px;
+    }
+    a{
+        &:hover{
+            color: $green;
+        }
+    }
+        }
+    }
+  }
+
+  .f-border{
+    height: 1px;
+    background: #D3D3D3;
+     margin: 0px 0 25px;
+         @include min(767){
+    margin: 0px 0 35px;
+           }
+           @include min(1200){
+    margin: 20px 0 45px;
+           }
+            @include min(1400){
+    margin: 20px 0 75px;
+           }
+  }
+}
+
+
+.salesforce-f{
+    background: #2E2E2E;
+    padding-top: 20px;
+    margin-top: 0;
+    color: $white;
+    .f-border{
+        background: #3E3E3E;
+    }
+    .f-abt p,.f-nav ul li,.f-nav ul li:first-child a,.f-nav ul li:first-child a:hover,.f-adrs,.f-sm-icons ul li a i{
+        color: $white;
+    }
+    .f-adrs ul li a:hover{
+        color: $green!important;
+    }
+}

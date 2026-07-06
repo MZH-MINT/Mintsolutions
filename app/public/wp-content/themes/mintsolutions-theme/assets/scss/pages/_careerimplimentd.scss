@@ -1,0 +1,284 @@
+ .career-section {
+   margin-bottom: 20px;
+      @include min(768) {
+    display: flex;
+      }
+        @include min(1024) {
+            gap: 80px;
+           }
+       @include min(1680) {
+            gap: 160px;
+           }
+
+.job-list {
+     
+         margin-top: 30px;
+        width:100%;
+        margin-bottom: 20px;
+            @include min(768) {
+               width:60%;
+           }
+         @include min(1440) {
+               width: 40%;
+           }
+
+        }
+.job-item {
+            display: flex;
+            padding: 15px 20px 15px 40px;
+            border-top: 1px solid $black;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            transition: all ease-in-out .4s;
+              @include min(768) {
+                 padding: 15px 10px 20px 15px;
+            }
+             @include min(1024) {
+                 padding: 15px 10px 20px 35px;
+             }
+              @include min(1440) {
+             padding: 35px 20px 30px 40px;
+             }
+              &:hover{
+                background-image: linear-gradient(to right, #3BB54A,#2F9C43,#329F78,#3AA7EA ) ;	
+                transition: all ease-in-out .4s;
+                padding-right: 35px;
+                .num{
+                    opacity: 0;
+                }
+                h3,p{
+                    color: $white;
+                }
+                .v-detail-btn{
+                    background: $white;
+                    color: $black;
+                    &:after{
+                        background: url(/assets/images/icons/btn-rt-iconbl.png) no-repeat;
+                    }
+                }
+
+
+            }
+
+                .num-title{
+                position: relative;
+            }
+            .num{
+                 position: absolute;
+                left: -40px;
+                top: -6px;
+                z-index: 2;
+                    &:before{
+                    content: "0" counter(heading);
+                    counter-increment: heading;
+                    font-size: 20.6px;
+                    
+                    font-family: $primary-font; 
+                    font-weight: 300;
+                    
+            }
+            }
+              &#num-tag{
+                counter-reset: heading;
+              }
+
+               h3{
+                font-weight: 300;
+                font-family: $primary-font;
+                 font-size: 20px;
+                margin-bottom: 7px;
+                  @include min(768) {
+                     font-size: 22px;
+                  }
+                   @include min(1044) {
+                     font-size: 32px;
+                  }
+              }
+              p{
+                font-weight: 300;
+                font-family: $primary-font;
+                font-size:16px;
+                color: #6F6F6F;
+                margin: 0;
+              }
+              .view-btn{
+                background: $green;
+                font-family: $secondary-font;
+                font-size: 13px;
+                color: $white;
+                font-weight: 400;
+                border-radius: 6px;
+                align-items: center;
+                position: relative;
+                padding: 4px 35px 4px 16px;
+                  @include min(1440) {
+                padding: 8px 40px 8px 20px;
+                font-size: 15.68px;
+                  }
+                &:after{
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    background: url(/assets/images/icons/btn-rt-icon.png) no-repeat;
+                    z-index: 1;
+                }
+              
+              }
+
+            }
+
+.job-item.active {
+   background-image: linear-gradient(to right, #3BB54A,#2F9C43,#329F78,#3AA7EA ) ;	
+  .career-section .job-item .num:before, h3,  p{
+    color: #fff!important;
+  }
+  .num:before{
+    opacity: 0;
+  }
+}
+
+.close-btn{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    transform: translateY(-50%);
+      position: absolute;
+  top: 50%;
+  right: 35px;
+  font-size: 18px;
+  color: #6F6F6F;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+// .view-btn {
+//   background: #28a745;
+//   border: none;
+//   color: white;
+//   padding: 8px 15px;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+
+
+.job-item.active .close-btn {
+  display: block;
+}
+
+.job-right {
+  flex: 2;
+  position: relative;
+}
+.default-image{
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  &:before{
+        content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(47, 156, 67, 0.84) 8%, rgba(52, 161, 137, 0.23) 42%, rgba(55, 164, 193, 0.45) 75%, rgba(58, 167, 234, 0) 100%);
+    z-index: 3;
+  }
+}
+.default-image {
+  display: none;
+}
+.default-image.active {
+  display: block;
+}
+.default-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.job-details .detail-box {
+  display: none;
+}
+.job-details .detail-box.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+  h2{
+     font-size: 20px;
+     @include min(375) {
+    font-size: 26px;
+    }
+     @include min(768) {
+    font-size: 30px;
+    }
+    @include min(1440) {
+    font-size: 38px;
+    }
+  }
+  p{
+    color: #44505C;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+          @include min(768) {
+ font-size: 18px;
+ line-height: 26px;
+      }
+      @include min(1440) {
+ font-size: 20px;
+  line-height:32px;
+      }
+    span{
+         font-weight: bold;
+    }
+  }
+  h3{
+    color: #44505C;
+    font-size: 15px;
+    font-weight: bold;
+            @include min(768) {
+ font-size: 18px;
+      }
+      @include min(1440) {
+ font-size: 20px;
+      }
+  }
+
+  ul{
+    margin-left: 15px;
+    li{
+           color: #44505C;
+    font-size: 15px;
+    font-weight: 300;
+      line-height: 22px;
+          @include min(768) {
+ font-size: 18px;
+ line-height: 26px;
+      }
+      @include min(1440) {
+ font-size: 20px;
+  line-height:32px;
+      }
+    }
+  }
+}
+
+.job-item.active .view-btn {
+  display: none;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ }

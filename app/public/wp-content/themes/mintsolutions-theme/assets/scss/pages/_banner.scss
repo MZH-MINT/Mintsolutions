@@ -1,0 +1,577 @@
+
+.h-banner-otr{
+	width: 100%;
+	height: 100%;
+	position: relative;
+  overflow: hidden;
+}
+
+.h-banner{
+	width: 100%;
+	position: relative;
+    height:340px;
+       img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+         transform: scale(1.2);
+         transition: all ease-in-out 0.3s;
+    }
+       @include min(768){
+        height: 500px;
+     }
+     @include min(1024){
+        height: 700px;
+     }
+       @include min(1440){
+     height: 910px;
+     }
+     @include min(1680){
+     height: 1048px;
+     }
+     &:before{
+      content: "";
+      width: 100%;
+	position: absolute;
+	z-index: 3;
+	background: rgba($color: #000000, $alpha: 0.7);
+  height:100%;
+      top: 0;
+      left: 0;
+     }
+	.hero-section{
+      position: relative;
+    height: 100%;
+    z-index: 5;
+    width: 100%;
+    text-align: left;
+	}
+	.hero{
+		margin-left: 60px;
+		position: absolute;
+		z-index: 5;
+        top:25%;
+        @include min(360){
+            width: 80%;
+            
+         }
+         @include min(768){
+         width: 70%;
+         top:26%;
+         }
+            @include min(1024){
+            margin-left: 100px;
+            width:54%;
+		      top:30%;
+         }
+             @include min(1200){
+            margin-left: 100px;
+            width:45%;
+		      top:30%;
+         }
+         @include min(1440){
+            margin-left: 124px;
+            width: 49%;
+            top:28%;
+         }
+          @include min(1680){
+            margin-left: 100px;
+            width:47%;
+            top:32%;
+         }
+		h2{
+			color: #2F9C43;
+			text-transform: uppercase;
+			 font-family: "Gilroy-Bold", sans-serif;
+       font-weight: 700;
+          
+			span{
+				color: $white;
+			}
+		}
+		p{
+			
+			margin-bottom: 30px;
+			color: $white;
+			font-family: $secondary-font ;
+             font-size: 14px;
+             line-height: 24px;
+               @include min(1200){
+                font-size: 16px;
+              }
+               @include min(1400){
+                font-size: 16px;
+                margin-bottom: 40px;
+              }
+                @include min(1680){
+                font-size: 20px;
+                 line-height:34px;
+                 	
+              }
+              
+		}
+    .hero-btn{
+       padding: 4px 24px 4px 14px;
+      @include min(768){
+              padding: 9px 42px 9px 19px;
+      }
+    }
+	}
+  .hero-3{
+     @include min(900){
+    width: 72%;
+       }
+       @include min(1200){
+    width: 60%;
+       }
+        @include min(1440){
+    width: 60%;
+       }
+        @include min(1680){
+    width: 78%;
+       }
+        @include min(1810){
+    width: 64%;
+       }
+  }
+}
+
+
+
+.clint-logo-section{
+	 background-image: linear-gradient(to right, #3BB54A 0%,#2F9C43 40%,#329F78 59%,#3AA7EA 100%);	
+      padding: 0px;
+            @include min(990){
+	 padding: 35px 0px 28px;
+       }
+           @include min(1200){
+	 padding: 35px 0px 28px;
+       }
+         @include min(1400){
+	 padding: 48px 0px 38px;
+       }
+       @include min(1680){
+	 padding: 50px 0px 50px;
+       }
+	 .clint-logo{
+		display: flex;
+    
+         align-items: center;
+          gap: 25px;
+         @include min(1024){
+                gap: 35px;
+          }
+         @include min(1440){
+                gap: 45px;
+          }
+          @include min(1680){
+                gap: 85px;
+          }
+		h3{
+			font-family: $primary-font;
+         font-weight: 400;
+			color: $white;
+         font-size:20px;
+         line-height: 28px;
+           width: 48%;
+         margin-bottom: 0!important;
+          @include min(765){
+                  width: 28%;
+          }
+           @include min(1024){
+          line-height: 27px;
+          font-size:26px;
+            width: 25%;
+         }
+         @include min(1440){
+          line-height: 38px;
+          font-size:30px;
+          width: 20%;
+         }
+          @include min(1680){
+			font-size: 34px;
+          line-height: 38px;
+          width: 20%;
+         }
+		}
+		.logos{
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 0;
+            position: relative;
+
+    .logos-content {
+      display: inline-block;
+      padding-left: 100%; /* start from right */
+      animation: marquee 15s linear infinite;
+    }
+
+    .logos-content img {
+      height: 50px;
+      margin: 0 30px;
+      vertical-align: middle;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    
+        //  img{
+           
+        //     margin: 0 15px;
+        //     display: none;
+        //     @include min(768){
+        //        width: 100px;
+        //        	gap: 10px;
+        //           display: inline-block;
+        //     }
+        //       @include min(1024){
+        //       width: 90px;
+        //       gap: 5px;
+        //     }
+        //       @include min(1440){
+        //       width: 165px;
+        //     }
+        //     @include min(1680){
+        //      width: auto;
+        //     }
+        //  }
+
+
+		}
+	 }
+}
+
+
+
+
+// Inner Banner start here
+
+.inner-banner-otr{
+    height: 360px;
+    position: relative;
+      @include min(768){
+     height:380px;
+     }
+     @include min(1024){
+     height: 410px;
+     }
+     @include min(1440){
+     height:500px;
+     }
+     @include min(1680){
+     height: 595px;
+     }
+   &:before{
+      content: "";
+      width: 100%;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;bottom: 0;
+      right: 0;
+      background-image: linear-gradient(to bottom, #010101,#34A746 ) ;	
+           opacity: .6;
+      }
+         video{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;left: 0;
+                z-index: 2;
+               }
+         .inner-banner-hero{
+            display: flex;
+               align-items: center;
+               justify-content: center;
+               position: relative;
+               z-index: 4;
+               height: 100%;
+               .inner-hero{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                   
+                          h2{
+                  color: $white;
+                   font-size:22px;
+                    line-height: 30px;
+                     @include min(375){
+                    font-size:28px;
+                    line-height:20px;
+                   }
+                   @include min(768){
+                    font-size:28px;
+                    line-height:46px;
+                   }
+                   @include min(1024){
+                    font-size:34px;
+                    line-height: 66px;
+                   }
+                     &:last-child{
+                        text-align: right;
+                    }
+                     @include min(765){
+                      font-size: 38px;
+                  }
+                  @include min(1200){
+                      font-size: 40px;
+                  }
+                    @include min(1440){
+                      font-size: 45px;
+                  }
+                    @include min(1680){
+                      font-size: 65px;
+                  }
+               }
+            
+         }
+               }
+         
+    
+}
+
+
+.banner-overlay{
+   position: absolute;
+   z-index: 2;
+    background: rgba(0,0,0, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.h-banner-otr{
+    position: relative;
+    .slick-dots{
+        max-width: 100px!important;
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        right: 70px;
+        height: 100%;
+        z-index: 3;
+        display: flex!important;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        top: -80px;
+        @include max(767){
+            right:0px;
+            gap: 10px;
+        }
+      
+    }
+
+    .slick-dots li button:before{
+        color: #fff;
+        opacity: 1;
+        border: 1px solid transparent;
+        width: 36px;
+        height:36px;
+        line-height:36px;
+        align-items: center;
+        @include max(767){
+            width: 22px;
+            height:22px;
+        line-height:22px;
+
+        }
+    }
+    .slick-dots li.slick-active button:before{
+        border: 1px solid $green;
+        width:36px;
+        height:36px;
+        border-radius: 50%;
+        color: $green;;
+        @include max(767){
+            width: 22px;
+            height:22px;
+        }
+    }
+    .next-prv{
+        position: absolute;
+        z-index: 15;
+        right:30px;
+        bottom: 30px;
+        
+        @include max(767){
+            right:10px;
+        }
+        .prev,.next{
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            @include max(767){
+                width:25px;
+                height:25px;
+            }
+        }
+        .prev{
+            background-image: url(/assets/images/icons/next-arrow.png);
+            @include max(767){
+               background-size: 25px 25px;
+            }
+        }
+        .next{
+            background-image: url(/assets/images/icons/prev-arrow.png);
+            @include max(767){
+                background-size: 25px 25px;
+             }
+          }
+    }
+}
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  img{
+    margin: 0 20px;
+  }
+}
+
+
+.banner-slider{
+      transition: all ease-in-out 0.3s;
+    .slick-active img {
+  transform: scale(1);
+    transition: all ease-in-out 0.3s;
+}
+}
+
+
+.inner-banner{
+   background-size: cover;
+    background-position: center center;
+    height: 595px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+       
+}
+
+.highlight {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+    }
+
+    .highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height:60%;
+      background: linear-gradient(90deg, #3BB54A, #2F9C43, #329F78, #3AA7EA);
+      z-index: -1;
+      transition: width 1.2s ease-out;
+    }
+
+    /* animate highlight fill */
+    .highlight.show::before {
+      width: 100%;
+    }
+
+.sales-f-banner{
+    &:before{
+        background: none;
+    }
+}
+
+.abt-hero-w{
+     @include min(375) {
+    width: 70%;
+   }
+   @include min(768) {
+    width: 50%;
+   }
+
+}
+.service-hero-w{
+    @include min(375) {
+    width: 88%;
+   }
+   @include min(768) {
+    width:74%;
+   }
+     @include min(1200) {
+    width:60%;
+   }
+   @include min(1440) {
+    width:65.5%;
+   }
+    h2{
+          margin-bottom: 12px;
+    }
+}
+
+.career-hero-w{
+  @include min(375) {
+    width: 70%;
+   }
+   @include min(768) {
+    width: 46%;
+   }
+     @include min(1440) {
+   width: 42.5%;
+     }
+}
+
+.contct-bnr-w{
+        width:51%;
+     word-spacing: 20px;
+ 
+   @include min(768) {
+    width: 40%;
+   }
+     @include min(1200) {
+    width:36%;
+   }
+    @include min(1440) {
+   width: 44%;
+    }
+}
+
+.solution-bnr-w{
+    width: 80%;
+      @include min(768) {
+         width: 50%;
+     }
+     @include min(1200) {
+         width:45%;
+     }
+     @include min(1440) {
+         width: 56%;
+     }
+}
+
+
+.solution-hero-w{
+     @include min(375) {
+    width: 70%;
+   }
+   @include min(768) {
+    width: 57%;
+   }
+
+}
