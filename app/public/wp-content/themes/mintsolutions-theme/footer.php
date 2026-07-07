@@ -37,26 +37,26 @@
 				<div class="col-xl-9 col-lg-8 col-md-7">
 					<div class="f-nav">
 						<ul>
-							<li><a href="#">Discover</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Discover</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>">About Us</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/careers/' ) ); ?>">Careers</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/contactus/' ) ); ?>">Contact Us</a></li>
 						</ul>
 						<ul>
-							<li><a href="#">Services</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/digital-transformation/' ) ); ?>">Digital Transformation</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/solution-consulting/' ) ); ?>">Solution Consulting</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/managed-services/' ) ); ?>">Managed Services</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/it-staffing/' ) ); ?>">IT Staffing</a></li>
 						</ul>
 						<ul>
-							<li><a href="#">Solutions</a></li>
-							<li><a href="#" data-bs-toggle="modal" data-bs-target="#solution-saftymind">SAFETYMINT</a></li>
-							<li><a href="#" data-bs-toggle="modal" data-bs-target="#solution-saftymind">HAL EDGECATION</a></li>
-							<li><a href="#" data-bs-toggle="modal" data-bs-target="#solution-saftymind">HAL BUSINESS SUCCESS</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
+							<li><a href="#solution-saftymind" data-bs-toggle="modal" data-bs-target="#solution-saftymind">SAFETYMINT</a></li>
+							<li><a href="#solution-saftymind" data-bs-toggle="modal" data-bs-target="#solution-saftymind">HAL EDGECATION</a></li>
+							<li><a href="#solution-saftymind" data-bs-toggle="modal" data-bs-target="#solution-saftymind">HAL BUSINESS SUCCESS</a></li>
 						</ul>
 						<ul>
-							<li><a href="#">Get In Touch</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/contactus/' ) ); ?>">Get In Touch</a></li>
 							<li><a href="tel:+97148748544">+971 4874 8544</a></li>
 							<li><a class="mail" href="mailto:sales&#64;mintsolutions.ae">sales&#64;mintsolutions.ae</a></li>
 						</ul>
@@ -79,7 +79,7 @@
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="enquirNowLabel">Request a Demo</h5>
+					<h5 class="modal-title" id="enquirNowLabel">Request a free Demo</h5>
 					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">X</button>
 				</div>
 				<div class="modal-body">

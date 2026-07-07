@@ -115,4 +115,55 @@ jQuery(document).ready(function($) {
             }
         });
     }
+
+    /* =======================================
+       About page paragraph activation
+       ======================================= */
+
+    var aboutParagraphs = document.querySelectorAll('#text p');
+
+    if (aboutParagraphs.length > 0 && 'IntersectionObserver' in window) {
+        var aboutObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                entry.target.classList.toggle('active', entry.isIntersecting);
+            });
+        }, {
+            threshold: 1
+        });
+
+        aboutParagraphs.forEach(function(paragraph) {
+            aboutObserver.observe(paragraph);
+        });
+    }
+
+    /* =======================================
+       About page card hover behavior
+       ======================================= */
+
+    var aboutCards = $('.card-round');
+
+    if (aboutCards.length > 0) {
+        var cardTimer;
+
+        aboutCards.on('mouseenter', function() {
+            var hoveredCard = $(this);
+
+            cardTimer = setTimeout(function() {
+                aboutCards.each(function() {
+                    var card = $(this);
+
+                    if (!card.is(hoveredCard)) {
+                        card.addClass('hidden').removeClass('active');
+                    }
+                });
+
+                hoveredCard.addClass('active');
+            }, 200);
+        });
+
+        aboutCards.on('mouseleave', function() {
+            clearTimeout(cardTimer);
+            aboutCards.removeClass('hidden active');
+        });
+    }
 });

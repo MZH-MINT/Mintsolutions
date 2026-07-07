@@ -550,7 +550,10 @@
 /* Button hover white */
 .career-join-wrap:hover .btn-hvr-wt {
     background: #fff;
-    color: #2F9C43;
+    color: #2F9C43 !important;
+}
+.career-join-wrap:hover .btn-hvr-wt span {
+    color: #2F9C43 !important;
 }
 @media (min-width: 375px) {
     .career-join-wrap:hover .btn-hvr-wt { padding: 6px 25px 6px 10px; }
@@ -618,7 +621,10 @@
 
 /* btn-hvr-wt base */
 .career-join-wrap .btn-hvr-wt {
-    color: #2F9C43 !important;
+    color: #fff !important;
+}
+.career-join-wrap .btn-hvr-wt span {
+    color: inherit;
 }
 @media (min-width: 375px) {
     .career-join-wrap .btn-hvr-wt { padding: 6px 25px 6px 10px; }
@@ -627,6 +633,9 @@
     .career-join-wrap .btn-hvr-wt { padding: 6px 46px 6px 22px; }
 }
 .career-join-wrap .btn-hvr-wt:hover {
+    color: #2F9C43 !important;
+}
+.career-join-wrap .btn-hvr-wt:hover span {
     color: #2F9C43 !important;
 }
 
