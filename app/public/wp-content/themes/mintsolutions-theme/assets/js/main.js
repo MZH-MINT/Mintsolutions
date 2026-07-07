@@ -113,17 +113,7 @@ function initSitePlugins(context = document) {
     });
 
     /* ================= Marquee ================= */
-    if ($.fn.marquee && $('.marquee').length) {
-      $('.marquee').marquee({
-        duration: 10000,
-        gap: 0,
-        delayBeforeStart: 0,
-        direction: 'right',
-        startVisible: true,
-        duplicated: true,
-        pauseOnHover: true
-      });
-    }
+    // Marquee handled by CSS animation in home.css
 
     /* ================= Counter ================= */
     if ($.fn.countUp && $('.counter').length) {
@@ -210,6 +200,26 @@ function initSitePlugins(context = document) {
         lastScrollY = window.scrollY;
       });
     }
+
+    /* ================= Dynamic Active Class ================= */
+    const currentPath = window.location.pathname;
+    $('.main-nav ul li a').each(function() {
+      $(this).removeClass('active');
+      const href = $(this).attr('href');
+      if (href) {
+        try {
+          const linkPath = new URL(href).pathname;
+          // Apply active if exact match
+          if (linkPath === currentPath) {
+            $(this).addClass('active');
+            // Add active class to parent if inside a submenu
+            if ($(this).closest('.submenu').length) {
+              $(this).closest('.submenu').children('a').addClass('active');
+            }
+          }
+        } catch(e) {}
+      }
+    });
 
   } catch (e) {
     console.warn('initSitePlugins error', e);
