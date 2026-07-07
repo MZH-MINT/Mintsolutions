@@ -10,9 +10,9 @@
 global $wp;
 $request = trim($wp->request, '/');
 
-// Map 'contactus' to 'about-us' since the contact form was placed there
+// Map legacy contact URL to the actual contact page partial.
 if ( $request === 'contactus' ) {
-    $request = 'about-us';
+	$request = 'contact-us';
 }
 
 $page_file = get_template_directory() . '/pages/' . $request . '.php';
