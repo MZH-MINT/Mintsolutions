@@ -85,13 +85,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="logos">
 				<div class="logos-contenta">
 					<div class="marquee">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-muncipality.png" alt="" />
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/al-futtaim.png" alt="" />
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-developmets.png" alt="" />
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/sobha.png" alt="" />
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/rak-properties.png" alt="" />
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/gulf-softwar-distribution.png" alt="" />
-						<!-- repeat logos if required -->
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-muncipality.png" alt="Dubai Municipality" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/al-futtaim.png" alt="Al Futtaim" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-developmets.png" alt="Dubai Developments" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/sobha.png" alt="Sobha" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/rak-properties.png" alt="RAK Properties" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/gulf-softwar-distribution.png" alt="Gulf Software Distribution" />
+						<!-- Duplicate for seamless loop -->
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-muncipality.png" alt="Dubai Municipality" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/al-futtaim.png" alt="Al Futtaim" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/dubai-developmets.png" alt="Dubai Developments" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/sobha.png" alt="Sobha" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/rak-properties.png" alt="RAK Properties" />
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/gulf-softwar-distribution.png" alt="Gulf Software Distribution" />
 					</div>
 				</div>
 			</div>
@@ -112,7 +118,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="col-lg-6 col-md-6">
 					<h3>
 						We are technology entrepreneurs dedicated to creating delightful
-						technology <span> life easier.</span>
+						technology <span>life easier.</span>
 					</h3>
 					<figure class="abt-img">
 						<div class="grdnt-overlay"></div>
@@ -235,7 +241,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<a href="#" class="rto-btn rto-wht-btn btn-x-bounce" data-bs-toggle="modal" data-bs-target="#enquirNow">
 								<span>Request for Demo</span>
 							</a>
-							<a href="#" class="website-link">Visit Website</a>
+							<a href="#" class="website-link">Visit Website &gt;</a>
 						</div>
 					</div>
 				</div>
@@ -257,7 +263,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<a href="#" class="rto-btn rto-wht-btn btn-x-bounce" data-bs-toggle="modal" data-bs-target="#enquirNow">
 								<span>Request for Demo</span>
 							</a>
-							<a href="#" class="website-link">Visit Website</a>
+							<a href="#" class="website-link">Visit Website &gt;</a>
 						</div>
 					</div>
 				</div>
@@ -279,7 +285,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<a href="#" class="rto-btn rto-wht-btn btn-x-bounce" data-bs-toggle="modal" data-bs-target="#enquirNow">
 								<span>Request for Demo</span>
 							</a>
-							<a href="#" class="website-link">Visit Website</a>
+							<a href="#" class="website-link">Visit Website &gt;</a>
 						</div>
 					</div>
 				</div>

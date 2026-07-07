@@ -58,6 +58,20 @@ function mintsolutions_enqueue_assets() {
         wp_get_theme()->get( 'Version' )
     );
 
+    wp_enqueue_style(
+        'mintsolutions-fonts',
+        'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap',
+        array(),
+        null
+    );
+
+    wp_enqueue_style(
+        'fontawesome',
+        'https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css',
+        array(),
+        '6.2.1'
+    );
+
     $css_files = glob( $theme_dir . '/assets/css/*.css' );
 
     if ( ! empty( $css_files ) ) {
@@ -66,13 +80,7 @@ function mintsolutions_enqueue_assets() {
         foreach ( $css_files as $css_file ) {
             $filename = wp_basename( $css_file );
 
-            if ( 'bootstrap.min.css' === $filename && file_exists( $css_file ) ) {
-                wp_enqueue_style(
-                    'bootstrap',
-                    $theme_uri . '/assets/css/bootstrap.min.css',
-                    array(),
-                    filemtime( $css_file )
-                );
+            if ( in_array( $filename, array( 'bootstrap.min.css', 'header-footer.css' ), true ) ) {
                 continue;
             }
 
@@ -83,6 +91,24 @@ function mintsolutions_enqueue_assets() {
                 filemtime( $css_file )
             );
         }
+    }
+
+    if ( file_exists( $theme_dir . '/assets/css/bootstrap.min.css' ) ) {
+        wp_enqueue_style(
+            'bootstrap',
+            $theme_uri . '/assets/css/bootstrap.min.css',
+            array(),
+            filemtime( $theme_dir . '/assets/css/bootstrap.min.css' )
+        );
+    }
+
+    if ( file_exists( $theme_dir . '/assets/css/header-footer.css' ) ) {
+        wp_enqueue_style(
+            'mintsolutions-header-footer',
+            $theme_uri . '/assets/css/header-footer.css',
+            array( 'mintsolutions-style', 'bootstrap' ),
+            filemtime( $theme_dir . '/assets/css/header-footer.css' )
+        );
     }
 
     wp_enqueue_script( 'jquery' );
