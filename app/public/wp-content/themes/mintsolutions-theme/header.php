@@ -44,15 +44,12 @@
 							<li>
 								<a href="<?php echo esc_url( home_url( '/about-us/' ) ); ?>" class="<?php echo is_page( 'about-us' ) ? 'active' : ''; ?>">About us</a>
 							</li>
-							<li>
+							<li class="submenu">
 								<a href="<?php echo esc_url( home_url( '/our-expertise/' ) ); ?>" class="<?php echo is_page( array( 'our-expertise', 'services', 'solutions' ) ) ? 'active' : ''; ?>">OUR EXPERTISE</a>
+								<i></i>
 								<ul>
-									<li>
-										<a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a>
-									</li>
-									<li>
-										<a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a>
-									</li>
+									<li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
 								</ul>
 							</li>
 							<li>
@@ -62,20 +59,20 @@
 								<a href="<?php echo esc_url( home_url( '/contactus/' ) ); ?>" class="<?php echo is_page( 'contactus' ) ? 'active' : ''; ?>">Contact Us</a>
 							</li>
 						</ul>
-
-						<div class="nav-rt-section">
-							<ul>
-								<li>
-									<a title="Mint Solutions FZCO" href="<?php echo esc_url( home_url( '/salesforce/' ) ); ?>" class="sals-f-btn">Salesforce</a>
-								</li>
-								<li>
-									<a title="Mint Solutions FZCO" href="#" class="rto-btn" data-bs-toggle="modal" data-bs-target="#enquirNow">
-										<span>Request a free Demo</span>
-									</a>
-								</li>
-							</ul>
-						</div>
 					</nav>
+
+					<div class="nav-rt-section">
+						<ul>
+							<li>
+								<a title="Mint Solutions FZCO" href="<?php echo esc_url( home_url( '/salesforce/' ) ); ?>" class="sals-f-btn">Salesforce</a>
+							</li>
+							<li>
+								<a title="Mint Solutions FZCO" href="#" class="rto-btn" data-bs-toggle="modal" data-bs-target="#enquirNow">
+									<span>Request a free Demo</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 
 					<div class="mob-btn" role="button" aria-label="Toggle navigation">
 						<span></span>
