@@ -273,11 +273,11 @@
 
 .marquee {
     display: flex;
-    gap: 50px;
-    animation: marqueeScroll 25s linear infinite;
+    gap: 30px;
+    animation: marqueeScroll 10s linear infinite;
     align-items: center;
     white-space: nowrap;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 .marquee:hover {
@@ -286,8 +286,8 @@
 
 @media (min-width: 1200px) {
     .marquee {
-        gap: 80px;
-        padding-right: 80px;
+        gap: 50px;
+        padding-right: 50px;
     }
 }
 
