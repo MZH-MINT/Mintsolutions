@@ -1116,3 +1116,55 @@ footer.salesforce-f .f-sm-icons ul li a i {
 footer.salesforce-f .f-adrs ul li a:hover {
     color: var(--green) !important;
 }
+
+/* ===========================
+   Header Hover Styles
+=========================== */
+@media (min-width: 1200px) {
+    header:hover {
+        background: #ffffff !important;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    }
+    header:hover .b-logo {
+        display: block !important;
+    }
+    header:hover .w-logo {
+        display: none !important;
+    }
+    header:hover .main-nav a,
+    header:hover .sals-f-btn {
+        color: #44505c;
+    }
+    header:hover .main-nav a.rto-btn,
+    header:hover .sals-f-btn.rto-btn {
+        color: var(--white);
+    }
+    header:hover .nav-rt-section ul li a {
+        color: #44505c;
+    }
+    header:hover .main-nav a.active {
+        color: var(--green);
+        font-weight: 400;
+    }
+    header:hover .main-nav a.active:after {
+        background: var(--green);
+    }
+}
+
+/* Force header CTA text to always be white */
+.header-wt .nav-rt-section a.rto-btn,
+.header-wt .nav-rt-section a.rto-btn span,
+header.sticky .nav-rt-section a.rto-btn,
+header.sticky .nav-rt-section a.rto-btn span,
+header:hover .nav-rt-section a.rto-btn,
+header:hover .nav-rt-section a.rto-btn span,
+.nav-rt-section ul li a.rto-btn,
+.nav-rt-section ul li a.rto-btn span,
+.nav-rt-section ul li a.rto-btn:hover,
+.nav-rt-section ul li a.rto-btn:hover span,
+.nav-rt-section ul li a.rto-btn:active,
+.nav-rt-section ul li a.rto-btn:active span,
+.nav-rt-section ul li a.rto-btn:focus,
+.nav-rt-section ul li a.rto-btn:focus span {
+    color: #fff !important;
+}

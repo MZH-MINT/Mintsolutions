@@ -76,43 +76,53 @@ jQuery(document).ready(function($) {
     }
 
     /* =======================================
-       Contact Form Submission Handling (Basic)
+       About page paragraph activation
        ======================================= */
-       
-    if ($('#contactForm').length > 0) {
-        $('#contactForm').on('submit', function(e) {
-            e.preventDefault();
-            
-            var form = $(this);
-            var submitBtn = form.find('button[type="submit"]');
-            var msgDiv = $('#formMsg');
-            
-            // Basic validation
-            var isValid = true;
-            form.find('.validation-error').remove();
-            form.find('input, textarea').removeClass('input-invalid');
-            
-            form.find('input[required], textarea[required]').each(function() {
-                if (!$(this).val()) {
-                    isValid = false;
-                    $(this).addClass('input-invalid');
-                    $(this).parent().after('<div class="validation-error">This field is required</div>');
-                }
+
+    var aboutParagraphs = document.querySelectorAll('#text p');
+
+    if (aboutParagraphs.length > 0 && 'IntersectionObserver' in window) {
+        var aboutObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                entry.target.classList.toggle('active', entry.isIntersecting);
             });
-            
-            if (isValid) {
-                // Simulate submission
-                submitBtn.prop('disabled', true).html('<span>Processing...</span>');
-                
-                // Usually this would be an AJAX call to WordPress admin-ajax.php
-                // e.g., $.post(ajaxurl, data, function(response) { ... })
-                
-                setTimeout(function() {
-                    msgDiv.css('color', 'green').text('Thank you! Your message has been sent successfully.');
-                    form[0].reset();
-                    submitBtn.prop('disabled', false).html('<span>Submit</span>');
-                }, 1500);
-            }
+        }, {
+            threshold: 1
+        });
+
+        aboutParagraphs.forEach(function(paragraph) {
+            aboutObserver.observe(paragraph);
+        });
+    }
+
+    /* =======================================
+       About page card hover behavior
+       ======================================= */
+
+    var aboutCards = $('.card-round');
+
+    if (aboutCards.length > 0) {
+        var cardTimer;
+
+        aboutCards.on('mouseenter', function() {
+            var hoveredCard = $(this);
+
+            cardTimer = setTimeout(function() {
+                aboutCards.each(function() {
+                    var card = $(this);
+
+                    if (!card.is(hoveredCard)) {
+                        card.addClass('hidden').removeClass('active');
+                    }
+                });
+
+                hoveredCard.addClass('active');
+            }, 200);
+        });
+
+        aboutCards.on('mouseleave', function() {
+            clearTimeout(cardTimer);
+            aboutCards.removeClass('hidden active');
         });
     }
 });
