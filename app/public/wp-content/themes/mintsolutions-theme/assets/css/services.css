@@ -509,7 +509,7 @@ input:focus::placeholder {
   }
 }
 .h-banner-otr .next-prv .prev {
-  background-image: url(/assets/images/icons/next-arrow.png);
+  background-image: url(../images/icons/next-arrow.png);
 }
 @media (max-width: 767px) {
   .h-banner-otr .next-prv .prev {
@@ -517,7 +517,7 @@ input:focus::placeholder {
   }
 }
 .h-banner-otr .next-prv .next {
-  background-image: url(/assets/images/icons/prev-arrow.png);
+  background-image: url(../images/icons/prev-arrow.png);
 }
 @media (max-width: 767px) {
   .h-banner-otr .next-prv .next {
@@ -689,6 +689,57 @@ input:focus::placeholder {
   }
 }
 
+/* Section heading styles - from Angular headings SCSS */
+.section-services h3 {
+  color: #161B21;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+.section-services h3 span {
+  color: #2F9C43;
+}
+@media (min-width: 768px) {
+  .section-services h3 { line-height: 32px; font-size: 24px; }
+}
+@media (min-width: 1024px) {
+  .section-services h3 { line-height: 38px; font-size: 28px; }
+}
+@media (min-width: 1440px) {
+  .section-services h3 { font-size: 32px; }
+}
+@media (min-width: 1680px) {
+  .section-services h3 { font-size: 38px; }
+}
+
+/* Services detail h3 heading - service card titles */
+.services-detail h3 {
+  color: #161B21;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.services-detail h3 span {
+  color: #2F9C43;
+}
+@media (min-width: 768px) {
+  .services-detail h3 { line-height: 32px; font-size: 24px; }
+}
+@media (min-width: 1024px) {
+  .services-detail h3 { line-height: 38px; font-size: 28px; }
+}
+@media (min-width: 1440px) {
+  .services-detail h3 { font-size: 32px; }
+}
+@media (min-width: 1680px) {
+  .services-detail h3 { font-size: 38px; }
+}
+
+
 .services-wrap {
   transition: all ease-in-out 0.6s;
 }
@@ -700,7 +751,7 @@ input:focus::placeholder {
   color: #fff !important;
 }
 .services-wrap:hover .lm-btn:after {
-  background: url(/assets/images/icons/btn-rt-iconw.png) no-repeat;
+  background: url(../images/icons/btn-rt-iconw.png) no-repeat;
 }
 .services-wrap:hover .picture {
   overflow: hidden;
@@ -768,7 +819,7 @@ input:focus::placeholder {
   border: 1px solid #2F9C43;
   border-radius: 4.58px;
   padding: 2px 25px 2px 15px;
-  font-family: "Gilroy-Regular Ôÿ×";
+  font-family: "Outfit", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #2F9C43;
@@ -793,7 +844,7 @@ input:focus::placeholder {
   right: 25px;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/assets/images/icons/btn-rt-gr-icon.png) no-repeat;
+  background: url(../images/icons/btn-rt-gr-icon.png) no-repeat;
 }
 .services-wrap .picture {
   overflow: hidden;
@@ -801,6 +852,7 @@ input:focus::placeholder {
   transition: all ease-in-out 0.2s;
   margin-left: auto;
   width: auto;
+  max-width: 100%;
   height: auto;
 }
 @media (min-width: 1024px) {
@@ -818,6 +870,9 @@ input:focus::placeholder {
 .services-wrap .picture img {
   border-radius: 22px;
   transition: all ease-in-out 0.2s;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .services-wrap:before {
   content: "";
@@ -850,7 +905,7 @@ input:focus::placeholder {
   }
 }
 .services-wrap:nth-child(odd) i:before {
-  background: url(/assets/images/icons/tool01.png) no-repeat;
+  background: url(../images/icons/tool01.png) no-repeat;
   transition: all ease-in-out 0.3s;
   width: 22px;
   height: 22px;
@@ -858,7 +913,7 @@ input:focus::placeholder {
 }
 @media (min-width: 1024px) {
   .services-wrap:nth-child(odd) i:before {
-    background: url(/assets/images/icons/tool01.png) no-repeat;
+    background: url(../images/icons/tool01.png) no-repeat;
     width: 26px;
     height: 26px;
     background-size: cover;
@@ -866,14 +921,14 @@ input:focus::placeholder {
 }
 @media (min-width: 1200px) {
   .services-wrap:nth-child(odd) i:before {
-    background: url(/assets/images/icons/tool01.png) no-repeat;
+    background: url(../images/icons/tool01.png) no-repeat;
     width: 34px;
     height: 34px;
     background-size: cover;
   }
 }
 .services-wrap:nth-child(odd):hover i:before {
-  background: url(/assets/images/icons/tool01w.png) no-repeat;
+  background: url(../images/icons/tool01w.png) no-repeat;
   transition: all ease-in-out 0.3s;
   width: 22px;
   height: 22px;
@@ -881,7 +936,7 @@ input:focus::placeholder {
 }
 @media (min-width: 1024px) {
   .services-wrap:nth-child(odd):hover i:before {
-    background: url(/assets/images/icons/tool01w.png) no-repeat;
+    background: url(../images/icons/tool01w.png) no-repeat;
     width: 26px;
     height: 26px;
     background-size: cover;
@@ -889,7 +944,7 @@ input:focus::placeholder {
 }
 @media (min-width: 1200px) {
   .services-wrap:nth-child(odd):hover i:before {
-    background: url(/assets/images/icons/tool01w.png) no-repeat;
+    background: url(../images/icons/tool01w.png) no-repeat;
     width: 34px;
     height: 34px;
     background-size: cover;
@@ -905,6 +960,7 @@ input:focus::placeholder {
   .services-wrap:nth-child(odd) .services-img {
     width: 50%;
     padding-top: 80px;
+    min-width: 0;
   }
 }
 .services-wrap:nth-child(odd) .services-detail {
@@ -919,6 +975,7 @@ input:focus::placeholder {
   .services-wrap:nth-child(odd) .services-detail {
     width: 50%;
     margin-top: 90px;
+    min-width: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -959,7 +1016,7 @@ input:focus::placeholder {
   }
 }
 .services-wrap:nth-child(even) i:before {
-  background: url(/assets/images/icons/tool02.png) no-repeat;
+  background: url(../images/icons/tool02.png) no-repeat;
   transition: all ease-in-out 0.3s;
   width: 22px;
   height: 22px;
@@ -980,7 +1037,7 @@ input:focus::placeholder {
   }
 }
 .services-wrap:nth-child(even):hover i:before {
-  background: url(/assets/images/icons/tool02w.png) no-repeat;
+  background: url(../images/icons/tool02w.png) no-repeat;
   transition: all ease-in-out 0.3s;
   width: 22px;
   height: 22px;
@@ -1012,6 +1069,7 @@ input:focus::placeholder {
     width: 50%;
     text-align: left;
     order: 2;
+    min-width: 0;
   }
 }
 .services-wrap:nth-child(even) .services-detail {
@@ -1028,6 +1086,7 @@ input:focus::placeholder {
     width: 50%;
     text-align: right;
     margin-top: 90px;
+    min-width: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -1054,7 +1113,7 @@ input:focus::placeholder {
 }
 
 .discover-section {
-  background: url(/assets/images/discover-img.jpg) no-repeat;
+  background: url(../images/discover-img.jpg) no-repeat;
   background-size: cover;
   position: relative;
   height: 400px;

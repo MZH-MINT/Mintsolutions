@@ -108,7 +108,7 @@
 														<option value="+65">+65 (Singapore)</option>
 														<option value="+81">+81 (Japan)</option>
 														<option value="+82">+82 (South Korea)</option>
-														<option value="+91">+91 (India)</option>
+														<option value="+91" selected>+91 (India)</option>
 														<option value="+971">+971 (UAE)</option>
 														<option value="+92">+92 (Pakistan)</option>
 														<option value="+60">+60 (Malaysia)</option>
