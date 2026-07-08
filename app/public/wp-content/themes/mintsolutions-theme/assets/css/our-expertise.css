@@ -512,7 +512,7 @@ input:focus::placeholder {
   }
 }
 .h-banner-otr .next-prv .prev {
-  background-image: url(/assets/images/icons/next-arrow.png);
+  background-image: url(../images/icons/next-arrow.png);
 }
 @media (max-width: 767px) {
   .h-banner-otr .next-prv .prev {
@@ -520,7 +520,7 @@ input:focus::placeholder {
   }
 }
 .h-banner-otr .next-prv .next {
-  background-image: url(/assets/images/icons/prev-arrow.png);
+  background-image: url(../images/icons/prev-arrow.png);
 }
 @media (max-width: 767px) {
   .h-banner-otr .next-prv .next {
@@ -904,7 +904,7 @@ p {
   font-weight: 300;
   border-bottom: 1px solid #000;
   width: fit-content;
-  background: url(/assets/images/icons/rt-arrow.png) center right no-repeat;
+  background: url(../images/icons/rt-arrow.png) center right no-repeat;
 }
 @media (min-width: 768px) {
   .bottom-link {
@@ -1123,7 +1123,7 @@ p {
 
 .green-patern-bg {
   height: auto;
-  background: url(/assets/images/advantage-bg.jpg) center center no-repeat;
+  background: url(../images/advantage-bg.jpg) center center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1195,7 +1195,7 @@ p {
 }
 
 .sub-services {
-  background: url(/assets/images/advantage-bg02.jpg) center center no-repeat;
+  background: url(../images/advantage-bg02.jpg) center center no-repeat;
   height: auto;
   padding: 20px 0 40px 0;
   object-fit: cover;
@@ -1337,7 +1337,7 @@ p {
 }
 
 .bottom-link-wt {
-  background: url(/assets/images/icons/rt-arrow-wt.png) center right no-repeat;
+  background: url(../images/icons/rt-arrow-wt.png) center right no-repeat;
   border-bottom: 1px solid #fff;
   margin-top: 20px;
 }
@@ -1613,6 +1613,7 @@ p {
 }
 
 .industries-slid {
+  --expanded: 60%;
   /* active card */
   /* non-active (collapsed) */
 }
@@ -1702,6 +1703,11 @@ p {
   transform: rotateY(0deg);
   z-index: 5;
 }
+@media (min-width: 768px) {
+  .industries-slid .panel.active {
+    flex: 0 0 var(--expanded);
+  }
+}
 .industries-slid .panel.active .desc {
   opacity: 1;
 }
@@ -1741,9 +1747,11 @@ p {
     font-size: 34px;
   }
 }
-.industries-slid .panel.left {
-  flex: 0 0 calc((100% - var(--expanded)) / 7);
-}
-.industries-slid .panel.right {
-  flex: 0 0 calc((100% - var(--expanded)) / 7);
+@media (min-width: 768px) {
+  .industries-slid .panel.left {
+  flex: 0 0 calc((100% - var(--expanded)) / 4);
+  }
+  .industries-slid .panel.right {
+  flex: 0 0 calc((100% - var(--expanded)) / 4);
+  }
 }

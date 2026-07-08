@@ -1711,6 +1711,10 @@ a:visited {
     border: none;
 }
 
+.modal-body.no-body-padding {
+    padding: 0 !important;
+}
+
 #enquirNow .modal-header {
     background-image: linear-gradient(to right, #3BB54A, #2F9C43, #329F78, #3AA7EA);
     color: #fff;

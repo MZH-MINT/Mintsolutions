@@ -190,7 +190,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 						<img src="<?php echo $theme_uri; ?>/assets/images/sub-srv-img.jpg" class="img-rds-none" alt="UAE expertise" />
 						<div class="sub-serv-ditail">
 							<h3>UAE Expertise,<br />Simplified Partnership</h3>
-							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow">
+							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow" data-mail-type="bgv" data-modal-title="BGV Enquiry" data-no-body-padding="1">
 								Let&rsquo;s Build <span>Together</span>
 							</a>
 						</div>
@@ -268,7 +268,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 
 						<div class="sub-serv-ditail">
 							<h3>HR Leaders seeking fast, accurate verification results</h3>
-							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow">Talk to Ou<span>r Experts</span></a>
+							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow" data-mail-type="bgv" data-modal-title="BGV Enquiry" data-no-body-padding="1">Talk to Ou<span>r Experts</span></a>
 						</div>
 					</div>
 				</div>
@@ -278,7 +278,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 
 						<div class="sub-serv-ditail">
 							<h3>Compliance Teams needing end-to-end transparency</h3>
-							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow">Start You<span>r Project </span></a>
+							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow" data-mail-type="bgv" data-modal-title="BGV Enquiry" data-no-body-padding="1">Start You<span>r Project </span></a>
 						</div>
 					</div>
 				</div>
@@ -288,7 +288,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 
 						<div class="sub-serv-ditail">
 							<h3>Business Executives focused on reducing risk and building brand trust</h3>
-							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow">Start You<span>r Project </span></a>
+							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow" data-mail-type="bgv" data-modal-title="BGV Enquiry" data-no-body-padding="1">Start You<span>r Project </span></a>
 						</div>
 					</div>
 				</div>
@@ -330,7 +330,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 						<div class="services-f-box-dtl">
 							<h3>Build a Workforce You Can Trust</h3>
 							<p>Discover how technology and expertise unite to deliver seamless background screening for UAE enterprises.</p>
-							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow">Start Your<span> Verification Journey</span></a>
+							<a href="#enquirNow" class="bottom-link bottom-link-wt" data-bs-toggle="modal" data-bs-target="#enquirNow" data-mail-type="bgv" data-modal-title="BGV Enquiry" data-no-body-padding="1">Start Your<span> Verification Journey</span></a>
 						</div>
 					</div>
 				</div>

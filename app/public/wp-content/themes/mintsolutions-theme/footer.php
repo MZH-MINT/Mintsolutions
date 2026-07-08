@@ -85,7 +85,7 @@
 				<div class="modal-body">
 					<div class="enquirNow">
 						<article>
-							<form method="post" action="#" novalidate>
+							<form id="requestDemoForm" class="request-demo-form" method="post" action="#" novalidate>
 								<div class="row">
 									<div class="col-12">
 										<div class="input-holder profile">
