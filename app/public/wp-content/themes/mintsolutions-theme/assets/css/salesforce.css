@@ -691,27 +691,7 @@ input:focus::placeholder {
 .sales-f-banner{
     position:relative;
     overflow:hidden;
-    height: 450px;
-}
-@media (min-width: 1024px) {
-  .sales-f-banner {
-    height: 810px;
-  }
-}
-@media (min-width: 1200px) {
-  .sales-f-banner {
-    height: 850px;
-  }
-}
-@media (min-width: 1440px) {
-  .sales-f-banner {
-    height: 900px;
-  }
-}
-@media (min-width: 1680px) {
-  .sales-f-banner {
-    height: 980px;
-  }
+    height: auto;
 }
 
 .sales-f-banner:before {
@@ -979,7 +959,7 @@ input:focus::placeholder {
 }
 
 .sales-f-hero {
-    top: 150px;
+  top: 0;
     flex-direction: column;
     margin-bottom: 80px;
 }
@@ -1030,8 +1010,8 @@ input:focus::placeholder {
   background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, rgb(45, 45, 45) 17%, rgb(45, 45, 45) 100%);
   transition: all ease-in-out 0.4s;
   position: relative;
-  margin-top: -126px;
-  z-index: 3;
+  margin-top: 0;
+  z-index: auto;
 }
 @media (min-width: 1024px) {
   .sales-f-section {

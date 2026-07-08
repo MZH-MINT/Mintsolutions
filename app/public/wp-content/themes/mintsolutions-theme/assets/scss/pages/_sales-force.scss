@@ -7,7 +7,7 @@
   }
 
 .sales-f-banner{
-     height: 450px;
+  height: auto;
      position: relative;
      overflow: hidden;
      &:before{
@@ -24,19 +24,6 @@
   rgba(0, 43, 102, 0.72) 62%,  /* #002B66 with 72% opacity */
   rgba(0, 67, 223, 0.39) 80%   /* #0043DF with 39% opacity */
 );
-     }
-        @include min(1024){
-    height: 810px;
-     }
-   
-       @include min(1200){
-    height: 850px;
-     }
-       @include min(1440){
-    height: 900px;
-     }
-     @include min(1680){
-    height: 980px;
      }
        .cards-container {
       display: none;
@@ -239,7 +226,7 @@
 
   
 .sales-f-hero{
-    top: 150px;
+  top: 0;
        flex-direction: column;
        margin-bottom: 80px;
     h2{
@@ -275,8 +262,8 @@
     background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, rgb(45, 45, 45) 17%, rgb(45, 45, 45) 100%);
     transition: all ease-in-out 0.4s;
     position: relative;
-    margin-top: -126px;
-    z-index: 3;
+    margin-top: 0;
+    z-index: auto;
       @include min(1024){
     padding: 70px 0 40px;
      }
