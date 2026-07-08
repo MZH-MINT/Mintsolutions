@@ -119,9 +119,9 @@ padding-left: 65px;
     position: relative;
    .border-one{
     @include min(1200){
-     width:800px;
-    height: 80px;
-    background: url(/assets/images/shapes/line01.png) no-repeat;
+    width:800px;
+      height: 80px;
+      background: url(../images/shapes/line01.png) no-repeat;
     position: absolute;
     top: 54%;
     right: -440px;
@@ -138,9 +138,9 @@ padding-left: 65px;
     position: relative;
    .border-two{
     @include min(1200){
-     width:800px;
-    height: 80px;
-    background: url(/assets/images/shapes/line02.png) no-repeat;
+    width:800px;
+      height: 80px;
+      background: url(../images/shapes/line02.png) no-repeat;
     position: absolute;
     top: 40%;
     right:  -440px;
@@ -157,9 +157,9 @@ padding-left: 65px;
     position: relative;
    .border-three{
     @include min(1200){
-     width:868px;
-    height: 80px;
-    background: url(/assets/images/shapes/line03.png) no-repeat;
+    width:868px;
+      height: 80px;
+      background: url(../images/shapes/line03.png) no-repeat;
     position: absolute;
     top: 17%;
     right:  -430px;
@@ -196,9 +196,9 @@ padding-left: 65px;
     position: relative;
    .border-one{
     @include min(1200){
-     width:800px;
-    height: 80px;
-    background: url(/assets/images/shapes/line01-dgt.png) no-repeat;
+    width:800px;
+      height: 80px;
+      background: url(../images/shapes/line01-dgt.png) no-repeat;
     position: absolute;
     top: 54%;
     right: -540px;
@@ -220,9 +220,9 @@ padding-left: 65px;
     position: relative;
    .border-one{
     @include min(1200){
-     width:800px;
-    height: 80px;
-    background: url(/assets/images/shapes/line01-mng.png) no-repeat;
+    width:800px;
+      height: 80px;
+      background: url(../images/shapes/line01-mng.png) no-repeat;
     position: absolute;
     top: 54%;
     right: -480px;
@@ -239,9 +239,9 @@ padding-left: 65px;
     position: relative;
    .border-two{
     @include min(1200){
-     width:800px;
-    height: 80px;
-    background: url(/assets/images/shapes/line02-mng.png) no-repeat;
+    width:800px;
+      height: 80px;
+      background: url(../images/shapes/line02-mng.png) no-repeat;
     position: absolute;
     top: 40%;
     right:  -500px;
