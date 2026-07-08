@@ -157,7 +157,7 @@
 				</div>
 
 				<div class="modal-body">
-					<div class="solution-artical inner-solution-box">
+					<div class="inner-solution-box">
 						<div class="solution-slide-discr">
 							<img class="s-logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logos/safetymint.png" alt="SAFETYMINT logo"/>
 							<div class="slider-b-wrap">

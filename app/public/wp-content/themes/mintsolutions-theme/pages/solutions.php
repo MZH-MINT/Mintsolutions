@@ -36,7 +36,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 						<h3>Our <span>Solutions.</span></h3>
 					</div>
 
-					<div class="solution-artical inner-solution-box">
+					<div class="inner-solution-box">
 						<div class="solution-slide-discr">
 							<img class="s-logo" src="<?php echo $theme_uri; ?>/assets/images/logos/safetymint.png" alt="SAFETYMINT" />
 							<div class="slider-b-wrap">
@@ -57,7 +57,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 						</picture>
 					</div>
 
-					<div class="solution-artical inner-solution-box">
+					<div class="inner-solution-box">
 						<div class="solution-slide-discr">
 							<div class="slider-b-wrap">
 								<div class="btm-dsctn">
@@ -77,7 +77,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 						</picture>
 					</div>
 
-					<div class="solution-artical inner-solution-box">
+					<div class="inner-solution-box">
 						<div class="solution-slide-discr">
 							<div class="slider-b-wrap">
 								<div class="btm-dsctn">

@@ -211,10 +211,11 @@ function initSitePlugins(context = document) {
           const linkPath = new URL(href).pathname;
           // Apply active if exact match
           if (linkPath === currentPath) {
-            $(this).addClass('active');
             // Add active class to parent if inside a submenu
             if ($(this).closest('.submenu').length) {
               $(this).closest('.submenu').children('a').addClass('active');
+            } else {
+              $(this).addClass('active');
             }
           }
         } catch(e) {}
