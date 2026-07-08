@@ -297,6 +297,13 @@ input:focus::placeholder {
     transition: all ease 0.3s;
   }
 }
+
+@media (min-width: 1200px) {
+  .it-staffing-line-two:hover .border-two {
+    right: -475px;
+  }
+}
+
 .manged-line:hover:nth-child(2) .content-box-otr {
   top: -80px;
 }
@@ -347,7 +354,7 @@ input:focus::placeholder {
 }
 @media (min-width: 1200px) {
   .content-box-otr {
-    padding-left: 62px;
+    padding-left: 0px;
     height: 600px;
     width: 800px;
     right: -800px;
@@ -445,6 +452,8 @@ input:focus::placeholder {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
 }
 #default-view .grdnt-overlay {
   background: linear-gradient(to right, rgb(47, 156, 67) 0%, rgba(52, 161, 137, 0) 42%, rgba(55, 164, 193, 0.78) 75%, rgba(58, 167, 234, 0) 100%);

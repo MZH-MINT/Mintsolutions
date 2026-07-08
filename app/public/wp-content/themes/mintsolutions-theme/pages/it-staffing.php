@@ -51,7 +51,7 @@ $theme_uri = esc_url( get_template_directory_uri() );
 								</div>
 							</div>
 
-							<div class="menu-item manged-line" data-target="architecture">
+							<div class="menu-item manged-line it-staffing-line-two" data-target="architecture">
 								<div class="border-two"></div>
 								<h3>Short-Term &amp; Long-Term</h3>
 								<div class="content-box-otr">

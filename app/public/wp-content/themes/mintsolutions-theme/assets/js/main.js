@@ -143,6 +143,36 @@ function initSitePlugins(context = document) {
       deck.addEventListener('mouseleave', () => setActive(0));
     });
 
+    /* ================= Consulting menu hover ================= */
+    qsa(context, '.consulting-menu').forEach(menu => {
+      if (menu.dataset.init === '1') return;
+      menu.dataset.init = '1';
+
+      const imageView = menu.closest('.consulting-container')?.querySelector('#default-view');
+      const menuItems = menu.querySelectorAll('.menu-item');
+      const contentBoxes = menu.querySelectorAll('.content-box');
+
+      menuItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+          imageView?.classList.remove('fade-in');
+          imageView?.classList.add('fade-out');
+
+          contentBoxes.forEach(box => box.classList.remove('active'));
+
+          const target = item.getAttribute('data-target');
+          if (target) {
+            menu.querySelector(`#${target}`)?.classList.add('active');
+          }
+        });
+
+        item.addEventListener('mouseleave', () => {
+          contentBoxes.forEach(box => box.classList.remove('active'));
+          imageView?.classList.remove('fade-out');
+          imageView?.classList.add('fade-in');
+        });
+      });
+    });
+
     /* ================= Sticky tabs smooth scroll ================= */
     $('#menu-center a[href^="#"]', context)
       .off('click.sticky')

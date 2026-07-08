@@ -5,14 +5,17 @@
  * @package MintSolutions_Theme
  */
 ?>
-	<footer<?php echo is_page( 'salesforce' ) ? ' class="salesforce-f"' : ''; ?>>
+	<?php
+	$is_salesforce = is_page( 'salesforce' ) || ( get_queried_object() && isset(get_queried_object()->post_name) && get_queried_object()->post_name === 'salesforce' ) || strpos( $_SERVER['REQUEST_URI'], '/salesforce' ) !== false;
+	?>
+	<footer<?php echo $is_salesforce ? ' class="salesforce-f"' : ''; ?>>
 		<div class="container">
 			<div class="f-border"></div>
 			<div class="row">
 				<div class="col-xl-3 col-lg-4 col-md-5">
 					<div class="f-abt">
 						<a title="Mint Solutions FZCO" href="<?php echo esc_url( home_url( '/' ) ); ?>" class="f-logo">
-							<?php if ( is_page( 'salesforce' ) ) : ?>
+							<?php if ( $is_salesforce ) : ?>
 								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-v2.png" alt="Mint Solutions FZCO" />
 							<?php else : ?>
 								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-black-v2.png" alt="Mint Solutions FZCO" />
