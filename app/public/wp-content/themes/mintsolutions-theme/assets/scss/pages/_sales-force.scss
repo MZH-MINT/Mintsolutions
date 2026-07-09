@@ -6,8 +6,8 @@
     --ease: cubic-bezier(.22,.61,.36,1);
   }
 
-.sales-f-banner{
-  height: auto;
+.inner-banner-otr.sales-f-banner{
+     height: 450px;
      position: relative;
      overflow: hidden;
      &:before{
@@ -25,6 +25,19 @@
   rgba(0, 67, 223, 0.39) 80%   /* #0043DF with 39% opacity */
 );
      }
+        @include min(1024){
+    height: 810px;
+     }
+   
+       @include min(1200){
+    height: 850px;
+     }
+       @include min(1440){
+    height: 900px;
+     }
+     @include min(1680){
+    height: 980px;
+     }
        .cards-container {
       display: none;
       width: 100%;
@@ -33,6 +46,8 @@
       gap: 15px;
       margin-top: 55px;
       margin-left: 0px;
+      position: relative;
+      z-index: 5;
        @include min(768){
                 height: 500px;
                }
@@ -57,6 +72,8 @@
     display:none;
     gap:var(--gap);
     perspective:1200px;
+    position: relative;
+    z-index: 5;
      @include min(1024){
                 display:flex;
                     width:945px;
@@ -226,7 +243,7 @@
 
   
 .sales-f-hero{
-  top: 0;
+    top: 150px;
        flex-direction: column;
        margin-bottom: 80px;
     h2{
@@ -262,8 +279,8 @@
     background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, rgb(45, 45, 45) 17%, rgb(45, 45, 45) 100%);
     transition: all ease-in-out 0.4s;
     position: relative;
-    margin-top: 0;
-    z-index: auto;
+    margin-top: -126px;
+    z-index: 3;
       @include min(1024){
     padding: 70px 0 40px;
      }

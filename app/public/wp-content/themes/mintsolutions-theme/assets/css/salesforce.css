@@ -688,10 +688,31 @@ input:focus::placeholder {
   --ease: cubic-bezier(.22,.61,.36,1);
 }
 
-.sales-f-banner{
-    position:relative;
-    overflow:hidden;
-    height: auto;
+.inner-banner-otr.sales-f-banner {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+}
+
+@media (min-width: 1024px) {
+  .inner-banner-otr.sales-f-banner {
+    height: 810px;
+  }
+}
+@media (min-width: 1200px) {
+  .inner-banner-otr.sales-f-banner {
+    height: 850px;
+  }
+}
+@media (min-width: 1440px) {
+  .inner-banner-otr.sales-f-banner {
+    height: 900px;
+  }
+}
+@media (min-width: 1680px) {
+  .inner-banner-otr.sales-f-banner {
+    height: 980px;
+  }
 }
 
 .sales-f-banner:before {
@@ -750,6 +771,8 @@ input:focus::placeholder {
     gap:15px;
     margin-top:55px;
     margin-left:0;
+    position: relative;
+    z-index: 5;
 }
 @media (min-width: 768px) {
   .sales-f-banner .cards-container {
@@ -781,6 +804,8 @@ input:focus::placeholder {
     display:none;
     gap:var(--gap);
     perspective:1200px;
+    position: relative;
+    z-index: 5;
 }
 @media (min-width: 1024px) {
   .sales-f-banner .deck {
@@ -811,7 +836,7 @@ input:focus::placeholder {
   overflow: hidden;
   isolation: isolate;
   cursor: pointer;
-  height: 380px;
+  height: 292px;
   transition: flex-basis 0.3s var(--ease);
   background-size: cover;
   background-position: center;
@@ -959,7 +984,7 @@ input:focus::placeholder {
 }
 
 .sales-f-hero {
-  top: 0;
+  top: 150px;
     flex-direction: column;
     margin-bottom: 80px;
 }
@@ -1010,8 +1035,8 @@ input:focus::placeholder {
   background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, rgb(45, 45, 45) 17%, rgb(45, 45, 45) 100%);
   transition: all ease-in-out 0.4s;
   position: relative;
-  margin-top: 0;
-  z-index: auto;
+  margin-top: -126px;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
   .sales-f-section {
