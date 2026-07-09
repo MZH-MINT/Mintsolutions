@@ -503,7 +503,7 @@ a:hover, a:focus { text-decoration: none !important; }
         border-radius: 6px;
         background: #ffffff;
         position: absolute;
-        bottom: -5px;
+        bottom: -18px;
         left: 50%;
         transform: translateX(-3px);
     }
@@ -531,12 +531,11 @@ a:hover, a:focus { text-decoration: none !important; }
         min-width: 160px;
         border-radius: 4px;
         top: 37px;
-        left: 0;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
         transition: all ease 0.3s;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 0 5px rgba(204, 204, 204, 0.3);
         list-style: none;
     }
 
@@ -553,8 +552,6 @@ a:hover, a:focus { text-decoration: none !important; }
         color: #44505c;
         border-radius: 4px;
         position: relative;
-        text-transform: uppercase;
-        font-size: 13px;
     }
 
     .main-nav > ul ul li a:hover,
@@ -1167,4 +1164,56 @@ header:hover .nav-rt-section a.rto-btn span,
 .nav-rt-section ul li a.rto-btn:focus,
 .nav-rt-section ul li a.rto-btn:focus span {
     color: #fff !important;
+}
+
+/* Modal specific styling ported from Angular */
+.modal-dialog .modal-title {
+    text-transform: uppercase;
+}
+
+.modal-dialog .modal-header {
+    background-image: linear-gradient(to right, #3bb54a, #2f9c43, #329f78, #3aa7ea);
+    color: #fff;
+    position: relative;
+}
+
+.modal-dialog .modal-header .close-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 18px;
+    color: #6f6f6f;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-dialog-solution {
+    max-width: 1300px;
+}
+
+/* Fix for white gaps and image containment to perfectly match Angular */
+.modal-dialog-solution .modal-body {
+    padding: 0 !important;
+}
+
+.modal-dialog-solution .inner-solution-box {
+    margin: 0 !important;
+    border-radius: 0 0 6px 6px !important;
+}
+
+.modal-dialog-solution .inner-solution-box img {
+    display: block; /* Fixes the horizontal seam caused by inline baseline gap */
+    width: 100%;
+}
+
+.modal-dialog-solution .inner-solution-box:before,
+.modal-dialog-solution .inner-solution-box:after {
+    border-radius: 0 0 6px 6px !important;
 }

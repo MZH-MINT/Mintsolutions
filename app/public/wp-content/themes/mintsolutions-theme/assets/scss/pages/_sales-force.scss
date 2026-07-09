@@ -6,7 +6,7 @@
     --ease: cubic-bezier(.22,.61,.36,1);
   }
 
-.sales-f-banner{
+.inner-banner-otr.sales-f-banner{
      height: 450px;
      position: relative;
      overflow: hidden;
@@ -46,6 +46,8 @@
       gap: 15px;
       margin-top: 55px;
       margin-left: 0px;
+      position: relative;
+      z-index: 5;
        @include min(768){
                 height: 500px;
                }
@@ -70,6 +72,8 @@
     display:none;
     gap:var(--gap);
     perspective:1200px;
+    position: relative;
+    z-index: 5;
      @include min(1024){
                 display:flex;
                     width:945px;
@@ -239,19 +243,9 @@
 
   
 .sales-f-hero{
-  position: relative;
-  top: 60px;
-  width: 100%;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 80px;
-  @include min(1024){
-    top: 120px;
-  }
-  @include min(1440){
     top: 150px;
-  }
+       flex-direction: column;
+       margin-bottom: 80px;
     h2{
         font-size:28px;
         color: $white;
@@ -280,16 +274,6 @@
         }
     }
 }
-  .sales-f-banner .cards-container,
-  .sales-f-banner .deck{
-    overflow: visible;
-  }
-  .sales-f-banner .deck{
-    align-items: stretch;
-  }
-  .sales-f-banner .panel{
-    flex-shrink: 0;
-  }
 .sales-f-section{
       padding: 40px 0 30px;
     background: linear-gradient(180deg, rgba(45, 45, 45, 0) 0%, rgb(45, 45, 45) 17%, rgb(45, 45, 45) 100%);
@@ -617,21 +601,6 @@ background: linear-gradient(180deg, rgba(45, 45, 45, 0) 34%, rgb(45, 45, 45) 85%
     z-index: 2;
 
      }
-    .rto-wht-btn,
-    .rto-wht-btn span,
-    .rto-wht-btn:hover,
-    .rto-wht-btn:hover span{
-      color: $white !important;
-    }
-    .rto-wht-btn{
-      background: transparent;
-      border: 1px solid $white;
-      span{
-        &:after{
-          background: url("../images/icons/btn-rt-iconw.png") no-repeat;
-        }
-      }
-    }
     .vdo-content-wrap{
         height: 100%;
         display: flex;
